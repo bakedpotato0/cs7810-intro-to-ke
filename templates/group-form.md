@@ -4,7 +4,6 @@
 | ------------- | ------------- | ------------- |
 | Nicholas Latham  | latham.27@wright.edu  | https://github.com/bakedpotato0  |
 | Van Quoc Huy Vo  | vo.19@wright.edu  | https://github.com/HuyVo2303 |
-| Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
+| Chris Nodel  | nodel.3@wright.edu  | https://github.com/bananacat22/ |
 
 **Publicly Available GitHub Repository:** https://github.com/bakedpotato0/cs7810-intro-to-ke/
