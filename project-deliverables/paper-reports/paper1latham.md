@@ -7,7 +7,7 @@
 ## Report
 
 ### Summary
-This paper from 2001 is an outline of the concept of the Semantic Web in a near future context. The introductory narrative foreshadows Internet of Things connectivity, automation, and communication and coordination between different systems and services.
+This Scientific American article from 2001 is an outline of the concept of the Semantic Web in a near future context. The introductory narrative foreshadows Internet of Things connectivity, automation, and communication and coordination between different systems and services.
 The Semantic Web is then presented as the way to bring these technologies into reality.  The Semantic Web would be built on top of the existing World Wide Web, and introduce connectivity and features that would greatly expand its utility.
 Some of the technologies that will be used to build and expand the Semantic Web are Resource Description Framework (RDF), eXtensible Markup Language, Universal Resourse Identifiers (URIs), ontologies, and agents.
 
