@@ -12,7 +12,7 @@ Different views of what the Semantic Web should be are presented, including the 
 DARPA and the EU created Semantic Web language programs in the early 2000s whose products were later merged to become Web Ontology Language (OWL) under the banner of the W3C.  American research since then has been mostly focused on healthcare and defense applications,
 while European research has been more foundational, and the field overall is more popular in Europe.  Linked data has greatly increased since the early 2000s, but most companies are only concerned with internal management of their own data and not freely accessible data.
 Google introduced their Knowledge Graph in 2012, which allows related items to be retrieved. Knowledge graphs are more internally consistent than the Linked Data Cloud due to tighter controls. Natural language processing, machine learning, IoT technologies,
-and the life sciences are some of the fields being developed with Semantic Web concepts. However, the ultimate incarnation of the Semantic Web as a singular system or a collection of useful technologies has not yet been achieved.
+and the life sciences are some of the fields being developed with Semantic Web concepts. However, the ultimate incarnation of the Semantic Web as a singular system or a full collection of truly useful technologies has not yet been achieved.
 
 ### Key Takeaways
 1. Most companies are only interested in using Semantic Web technologies to manage their own data internally.
