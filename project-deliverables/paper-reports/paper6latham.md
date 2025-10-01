@@ -15,5 +15,5 @@
 3. takeaway
 
 ### Questions to Instructor
-1. Question 1
-2. Question 2
+1. Are there more advanced ontology development tools than Protege-2000, and what are they?
+2. Are there any more tips for developing ontologies beyond this guide?
