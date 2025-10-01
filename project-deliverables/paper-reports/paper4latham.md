@@ -15,5 +15,5 @@
 3. takeaway
 
 ### Questions to Instructor
-1. Question 1
-2. Question 2
+1. What are some possible combinations of the different companies' knowledge graph concepts?
+2. What notable developments have occurred since this article was published?
