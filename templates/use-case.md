@@ -1,6 +1,6 @@
 # Use Case
 ## Narrative
-I am text of the narrative [0]. There should be references included [1]. May be embedded in a sentence [2], and they precede punctuation [1].
+Our goal is to create a way to estimate life expectancy for Ohio residents based on environmental, social, and behavioral factors.
 
 ## Competency Questions
 * Competency Question<br>
