@@ -1,5 +1,6 @@
 # Use Case
 ## Narrative
+Life expectancy is determined by many factors across many categories. Certain factors can lead to acute or chronic diseases, or sudden life-changing or ending events.
 Our goal is to create a way to estimate life expectancy for Ohio residents based on environmental, social, and behavioral factors.
 
 ## Competency Questions
