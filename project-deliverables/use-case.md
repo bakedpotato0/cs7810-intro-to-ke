@@ -9,14 +9,15 @@ Our primary objective is to develop a knowledge graph model that estimates life 
 Using a knowledge graph will allow us to view and compare different segments of the Ohio population and more easily understand their average health.
 Our knowledge graph could conceivably be used to aid healthcare experts, guide government policies, and increase public awareness of both health risks and beneficial factors.
 The model will incorporate environmental data such as water quality and pollution.
-These environmental exposures have been directly linked to serious medical issues, such as respiratory issues and various forms of cancer, and all of which negatively affect longevity.
+These environmental exposures have been directly linked to serious medical issues, such as respiratory issues [0] and various forms of cancer [1], and all of which negatively affect longevity.
 
 Behavioral factors influencing life expectancy include:
 * Physical Activity: Engaging in regular moderate to vigorous physical activity can significantly increase life expectancy and reduce mortality risk. 
 * Healthy Diet: A healthy, balanced diet is linked to better survival rates and can contribute to a longer, healthier life. 
 * Smoking: Avoiding smoking and quitting the habit can improve life expectancy and reduce the risk of death from smoking-related diseases. 
 * Alcohol Consumption: Moderate alcohol consumption is part of a healthy lifestyle, with heavy or irregular drinking being detrimental to life expectancy. 
-* Sleep Quality: Maintaining a healthy sleep routine, such as sleeping 7–8 hours a day, is associated with greater survival chances.
+* Sleep Quality: Maintaining a healthy sleep routine, such as sleeping 7–8 hours a day, is associated with greater survival chances. [2]
+
 
 Social factors influencing life expectancy include:
 * Having a strong social support systems is associated with better health outcomes and longer life
@@ -69,16 +70,9 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 * [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
 * [Tobacco Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/tobacco-use-with-referral-info)
 
-
 ## References
-[0] Reference
-
-
-
-
-[1] Reference
-
-
-
+[0]  National Institute of Environmental Health Sciences, “Air pollution and your health,” National Institute of Environmental Health Sciences, Aug. 06, 2024. https://www.niehs.nih.gov/health/topics/agents/air-pollution
+[1]  R. D. Guzman and J. Schiller, “Air pollution and its impact on cancer incidence, cancer care and cancer outcomes,” BMJ Oncology, vol. 4, no. 1, pp. e000535–e000535, Mar. 2025, doi: https://doi.org/10.1136/bmjonc-2024-000535.
+[2]  National Sleep Foundation, “What is sleep quality?,” National Sleep Foundation, Apr. 12, 2024. https://www.thensf.org/what-is-sleep-quality/
 
 [2] Reference
