@@ -1,7 +1,17 @@
 # Use Case
 ## Narrative
-Life expectancy is determined by many factors across many categories. Certain factors can lead to acute or chronic diseases, or sudden life-changing or ending events.
-Our goal is to create a way to estimate life expectancy for Ohio residents based on environmental, social, and behavioral factors.
+Life expectancy is a measure that reflects the average number of years that a human is expected to live based on a variety of diverse factors. Generally, life expectancy is used to judge the average health of a society.
+In addition to genetic predispositions, life expectancy is greatly influenced by a combination of environmental, social, and behavioral influences.
+Across the state of Ohio, as in many parts of the United States, significant disparities in life expectancy may exist between different counties, ZIP codes, and even neighborhoods.
+This presents an opportunity to better understand and address the root causes of these variations through a data-driven approach.
+Our primary objective is to develop a knowledge graph model that estimates life expectancy for residents of all Ohio counties by integrating a wide range of datasets. The model will incorporate environmental data such as water quality and pollution.
+These environmental exposures have been directly linked to serious medical issues, such as respiratory issues and various forms of cancer, and all of which negatively affect longevity.
+
+-behavioral factors
+-social factors
+-data sources
+-conclusion
+
 
 ## Competency Questions
 * Competency Question<br>
