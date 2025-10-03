@@ -1,17 +1,3 @@
-# Build the Use-case
-1. Create a file called `use-case.md` from the [template](../templates/use-case.md).
-2. Fill the `Narrative` section with a top-level description of your use-case, including references. As a guideline, this section should be about 500 words. This should, at a minimum, answer the questions:
-    * Who are you supporting?
-    * What are their goals?
-    * Why is making a Knowledge Graph interesting -- or important -- for the use-case? 
-    * Why a knowledge graph and not a relational (tabular) database?
-3. Fill the `Competency Questions` section with no fewer than 10 competency questions. Thoroughly describe your intended interactions and what data will be retrieved to support said interactions.
-4. Fill the `Potential Datasets` section with links and access dates for no less than five potential datasets.
-5. Fill the `Existing Resources` section with any resources (e.g., ontologies, knowledge graphs, or standards) which can be used in the project.
-6. Provide all references in the `References` section. References should be numbered starting at 1, listed in order of appearance, and otherwise following the IEEE reference style. Ensure that the DOI is included for every reference, where available.
-
-**Note:** Ensure that each member contributes in explicit commits. Do not squash commits; the `git` history will serve as a record of participation and contribution.
-
 # Use Case
 ## Narrative
 Life expectancy is a measure that reflects the average number of years that a human is expected to live based on a variety of diverse factors. Generally, life expectancy is used to judge the average health of a society.
@@ -58,25 +44,30 @@ Bridges Datasets: Pharmacy Access, Behavioral Health Claims Dashboard
 Bridges Datasets: National DPP Locator Map, Hospital Registration Information
 * What infectious diseases correlate to higher infant mortality?<br>
 Bridges Datasets: Summary of Infectious Diseases, Infant Mortality
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, ...
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, ...
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, …
-* Competency Question<br>
-Bridges Datasets: dataset 1, dataset 2, ...
+* Do tobacco and eCigarette usage increase risk of dying from an infectious respiratory illness?<br>
+Bridges Datasets: Tobacco Use, eCigarette Use, ODH Respiratory Dashboard, Mortality
+* Does lead exposure increase mental health claims?<br>
+Bridges Datasets: Blood Lead Testing, Behavioral Health Claims
+* How much does lead exposure increase infant mortality?<br>
+Bridges Datasets: Blood Lead Testing, Infant Mortality
+* How does cardiovascular disease correlate with mental health issues?<br>
+Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Potential Datasets
-* [National Diabetes Prevention Program (National DPP) Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
-* [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
-* [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
-* [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
-* [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
 * [Behavioral Health Claims Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/mental-health-and-addiction-services-claims-dashboard)
+* [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
+* [Hospital Registration Information](https://data.ohio.gov/wps/portal/gov/data/view/hospital-registration-information)
+* [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
+* [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
+* [National DPP Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
+* [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
+* [Ohio BRFSS Annual Report](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-annual-report)
+* [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
-
+* [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
+* [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
+* [Tobacco Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/tobacco-use-with-referral-info)
 
 
 ## References
