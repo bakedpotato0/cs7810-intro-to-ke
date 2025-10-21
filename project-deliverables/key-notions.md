@@ -9,3 +9,19 @@
         * Occasionally there will be _controlled vocabularies_. These are not technically patterns, but are a list of individuals that are important (and will not change). Indicate which key notions behave as such and their list of individuals.
 
 **Note:** Ensure that each member contributes in explicit commits. Do not squash commits; the `git` history will serve as a record of participation and contribution.
+
+
+# Key Notions
+
+* Key Notion
+    * Rationale: rationale
+    * Connected Pattern: pattern name (pattern source)
+    * Source Dataset(s): dataset n, dataset n+1
+* Key Notion
+    * Rationale: rationale
+    * Connected Pattern: pattern name (pattern source)
+    * Source Dataset(s): dataset n, dataset n+1
+* Key Notion
+    * Rationale: rationale
+    * Connected Pattern: pattern name (pattern source)
+    * Source Dataset(s): dataset n, dataset n+1
