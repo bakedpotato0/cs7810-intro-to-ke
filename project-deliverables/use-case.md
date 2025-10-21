@@ -66,15 +66,30 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 * [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
   * 
 * [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
-  * 
+  * county
+  * number of deaths
 * [National DPP Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
   *
 * [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
   *
 * [Ohio BRFSS Annual Report](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-annual-report)
-  *
+  * condition
+  * ethnicity
+  * sex
+  * age
+  * education level
+  * percent affected
+  * region
+  * 
 * [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
-  *
+  * condition
+  * ethnicity
+  * sex
+  * age
+  * education level
+  * percent affected
+  * region
+  * 
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
   *
 * [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
