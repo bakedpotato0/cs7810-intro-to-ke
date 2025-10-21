@@ -13,15 +13,15 @@
 
 # Key Notions
 
-* Key Notion
-    * Rationale: rationale
+* There is a racial attribute to health outcomes.
+    * Rationale: African-Americans tend to have higher rates of diabetes and higher blood pressure, while Latinos tend to have lower rates of diabetes, and white people tend to have higher cholesterol and higher rates of skin cancer.  Social and racial factors are often interconnected, and non-white ethnicities tend to have poorer health outcomes.
     * Connected Pattern: pattern name (pattern source)
-    * Source Dataset(s): dataset n, dataset n+1
-* Key Notion
-    * Rationale: rationale
+    * Source Dataset(s): BRFSS annual report, dataset n+1
+* There is an interconnected wealth and educational attribute to health outcomes
+    * Rationale: Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
     * Connected Pattern: pattern name (pattern source)
-    * Source Dataset(s): dataset n, dataset n+1
-* Key Notion
-    * Rationale: rationale
+    * Source Dataset(s): BRFSS annual report, dataset n+1
+* 
+    * Rationale: H
     * Connected Pattern: pattern name (pattern source)
     * Source Dataset(s): dataset n, dataset n+1
