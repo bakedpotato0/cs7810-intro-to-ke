@@ -8,7 +8,7 @@
     * Rationale: Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
     * Connected Pattern: pattern name (pattern source)
     * Source Dataset(s): BRFSS annual report, Behavioral Health Claims Dashboard, hHospital Registration, Mortality
-* There is a pharmacy-access attribute to health outcomes.
+* There are pharmacy-access and hospital-access attribute to health outcomes.
     * Rationale: Taking medication as-prescribed by a healthcare professional improves health. "Self-medication" often diminishes health.
     * Connected Pattern: pattern name (pattern source)
     * Source Dataset(s): Respiratory Dashboard, Infectious Disease Dashboard, Behavioral Health Claims Dashboard, Hospital Registration, Mortality
