@@ -56,48 +56,102 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Potential Datasets
 * [Behavioral Health Claims Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/mental-health-and-addiction-services-claims-dashboard)
-  * 
+   *
 * [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
-  * 
+   *
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
-  * 
+   * age
+   * sex
+   * county
+   * ethnicity
 * [Hospital Registration Information](https://data.ohio.gov/wps/portal/gov/data/view/hospital-registration-information)
-  * 
+   * report year
+   * hospital dba name
+   * hospital number
+   * address
+   * city
+   * state
+   * zip code
+   * county
+   * medicare name
+   * corporate phone
+   * national provider identifier
+   * medicare provider number
+   * business entity type
+   * type_of_organization_responsible_for_overall_operational_polic
+   * hospital_part_of_a_multi_hospital_system
+   * system name
+   * medicare classification
+   * category_best_describing_hospital_services
+   * other_service_category
+   * joint_commission_accreditation
+   * hfap_accreditation
+   * medicare_certified
+   * dnv_accreditation
+   * date_of_last_accreditation_survey
+   * date_of_last_certification_survey
+   * distinct_part_psych_unit
+   * distinct_part_rehab_unit
+   * transplant_center
+   * maternity_unit
+   * medical_and_surgical_service_type
+   * surgical_cases_inpatient
+   * surgical_cases_outpatient
 * [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
-  * 
+   * county
+   * ethnicity
+   * age category
+   * birth outcomes
+	  * preterm birth
+	  * extreme preterm
+	  * low birth weight
+	  * extreme low birth weight
+   * maternal characteristics
+	  * smoker
+	  * prenatal care received
+	  * adequacy of prenatal care
+	  * obese weight pre-pregnancy
+	  * breastfed at discharge
+	  * appropriate pregnancy weight
+	  * interpregnancy interval under 18 months
 * [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
-  * county
-  * number of deaths
+   * county
+   * number of deaths
 * [National DPP Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
-  *
+   * county
 * [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
-  *
+   *
 * [Ohio BRFSS Annual Report](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-annual-report)
-  * condition
-  * ethnicity
-  * sex
-  * age
-  * education level
-  * percent affected
-  * region
-  * 
+   * condition
+   * ethnicity
+   * sex
+   * age
+   * education level
+   * percent affected
+   * region
+   *
 * [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
-  * condition
-  * ethnicity
-  * sex
-  * age
-  * education level
-  * percent affected
-  * region
-  * 
+   * condition
+   * ethnicity
+   * sex
+   * age
+   * education level
+   * percent affected
+   * region
+   *
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
-  *
+   *
 * [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
-  *
+   *
 * [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
-  *
+   * reportable condition
+   * county
 * [Tobacco Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/tobacco-use-with-referral-info)
-  * 
+   * age
+   * sex
+   * county
+   *
+
 
 ## References
 
@@ -106,3 +160,6 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 [1]  R. D. Guzman and J. Schiller, “Air pollution and its impact on cancer incidence, cancer care and cancer outcomes,” BMJ Oncology, vol. 4, no. 1, pp. e000535–e000535, Mar. 2025, doi: https://doi.org/10.1136/bmjonc-2024-000535.
 
 [2]  National Sleep Foundation, “What is sleep quality?,” National Sleep Foundation, Apr. 12, 2024. https://www.thensf.org/what-is-sleep-quality/
+
+
+
