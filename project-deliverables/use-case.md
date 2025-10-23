@@ -56,7 +56,15 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Potential Datasets
 * [Behavioral Health Claims Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/mental-health-and-addiction-services-claims-dashboard)
-   *
+   * age group
+   * gender
+   * race
+   * ethnicity
+   * current county of residence
+   * current county of residence type
+   * current board name
+   * hospital catchment
+   * primary diagnosis type
 * [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
    *
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
@@ -176,10 +184,26 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
    *
 * [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
-   *
+   * year
+   * countyCD
+   * age
+   * raceCD
+   * sexCD
+   * hispanicCD
+   * count
+   * AgeCDMCH
+   * AgeCDNCHS
+   * AgeCDNCI
+   * AgeCDSTD
+   * AgeBirth
+   * PopulationID
+   * AgeCDODRS
+   * AgeCDEHARS
 * [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
    * reportable condition
    * county
+   * report start date
+   * report end date
 * [Tobacco Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/tobacco-use-with-referral-info)
    * age
    * sex
