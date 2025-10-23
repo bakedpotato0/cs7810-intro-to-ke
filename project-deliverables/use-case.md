@@ -66,7 +66,9 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * hospital catchment
    * primary diagnosis type
 * [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
-   *
+   * year
+   * age group
+   * blood-lead micrograms/deciliter
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
    * age
    * sex
@@ -158,11 +160,27 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 	  * interpregnancy interval under 18 months
 * [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
    * county
-   * number of deaths
+   * year
+   * death count
 * [National DPP Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
-   * county
+   * name
+   * address
+   * city
+   * state
+   * zip
+   * contact
+   * website
+   * email
+   * phone
 * [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
-   *
+   * age
+   * county
+   * district
+   * week
+   * hospitalized
+   * covid19
+   * flu
+   * rsv
 * [Ohio BRFSS Annual Report](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-annual-report)
    * condition
    * ethnicity
@@ -182,7 +200,11 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * region
    *
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
-   *
+   * name
+   * location
+   * open_date
+   * closed_date
+   * pharmacy_type
 * [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
    * year
    * countyCD
@@ -208,7 +230,7 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * age
    * sex
    * county
-   *
+   * tobacco_type
 
 
 ## References
