@@ -97,6 +97,40 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * medical_and_surgical_service_type
    * surgical_cases_inpatient
    * surgical_cases_outpatient
+   * number_surgical_operating_rooms_inpatient
+   * number_surgical_operating_rooms_outpatient
+   * number_surgical_services_dual_purpose_operating_rooms
+   * total_operating_rooms_onsite
+   * total_operating_rooms_offsite
+   * emergency_services_type
+   * emergency_services_treated_and_admitted
+   * emergency_services_treated_and_released
+   * trauma_level_adult
+   * trauma_level_pediatric
+   * cardiac_service_type
+   * adult_cardiac_catheterizations
+   * pediatric_cardiac_catheterizations
+   * adult_open_heart_procedures
+   * pediatric_cardiovascular_procedures
+   * obstetric_level
+   * newborn_level
+   * beds_category
+   * number_of_admissions_for_beds_category
+   * patient_days
+   * beds_in_use
+   * registered_beds
+   * occupancy_rate
+   * average_length_of_stay
+   * discharged_to_home_without_referral_to_home_care_or_hospice
+   * discharged_to_home_with_referral_to_home_care
+   * discharged_to_home_with_referral_to_hospice
+   * discharged_to_inpatient_service_of_a_hospice_care_program
+   * tranfers_to_other_hospitals
+   * transfers_to_a_nursing_home
+   * expired
+   * total_discharges
+   * registration_status
+   * query_run_date
 * [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
    * county
    * ethnicity
