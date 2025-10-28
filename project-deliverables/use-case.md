@@ -65,10 +65,22 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * current board name
    * hospital catchment
    * primary diagnosis type
+* [Best Hospitals in Ohio](https://health.usnews.com/best-hospitals/area/oh)
+   * National Ohio Rankings
+   * Specialties
+   * Children's Specialties
+   * Procedures/Conditions
+   * location
 * [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
    * year
    * age group
    * blood-lead micrograms/deciliter
+* [Cancer Data and Statistics](https://www.cdc.gov/cancer/data/index.html)
+   * location (state)
+   * date (year)
+   * Rate of New Cancers
+   * Rate of Cancer Deaths
+   * Cancer Site
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
    * age
    * sex
