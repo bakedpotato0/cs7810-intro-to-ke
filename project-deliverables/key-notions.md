@@ -7,8 +7,36 @@
 * There is an interconnected wealth and educational attribute to health outcomes.
     * Rationale: Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
     * Connected Pattern: pattern name (pattern source)
-    * Source Dataset(s): BRFSS annual report, Behavioral Health Claims Dashboard, hHospital Registration, Mortality
-* There are pharmacy-access and hospital-access attribute to health outcomes.
+    * Source Dataset(s): BRFSS annual report, Behavioral Health Claims Dashboard, Hospital Registration, Mortality
+* There are pharmacy-access and hospital-access attributes to health outcomes.
     * Rationale: Taking medication as-prescribed by a healthcare professional improves health. "Self-medication" often diminishes health.
     * Connected Pattern: pattern name (pattern source)
     * Source Dataset(s): Respiratory Dashboard, Infectious Disease Dashboard, Behavioral Health Claims Dashboard, Hospital Registration, Mortality
+* Health outcomes are events that have a direct impact on the quality and longevity of a person’s life, and stem from a multitude of factors.
+    * Rationale: A series of health-related events can end a person’s life, or prolong it.
+    * Connected Pattern: HealthOutcome subClassOf LifeEvent some Person (Existential)
+    * Source Dataset(s): Mortality
+* Negative health outcomes range in severity.
+    * Rationale: Some outcomes can be treated while others cannot.
+    * Connected Pattern: NegativeHealthOutcome subClassOf HealthOutcome some Person (Existential)
+    * Source Dataset(s): Hospital Registration, Mortality, Infant Mortality
+* Positive health outcomes improve longevity.
+    * Rationale: Discharge from a hospital to home means that a patient has survived a health event.
+    * Connected Pattern: PositiveHealthOutcome subClassOf HealthEvent some Person (Existential)
+    * Source Dataset(s): Hospital Registration, Best Hospitals in Ohio, Cancer Data and Statistics
+* Key behaviors (i.e. Smoking, Vaccination, alcohol, exercises) affect health outcome
+    * Rationale: Behaviors are key risk factors can be tracked
+    * Connected Pattern:
+    * Source Dataset(s): Report section Smoking, Marijuana use, E-cigarette use, No Exercise
+* Healthcare Access Impact
+    * Rationale: accessibility to pharmacies and hospitals significantly impacts health outcomes.
+    * Connected pattern: Accessibility pattern - represent spatial or service accessibility relationships between a population and healthcare facilities
+    * Source Dataset(s):
+* Location is a large determinant of Health outcomes
+    * Rationale: where a person is located determines a number of social, environmental, and economic factors that affect health outcomes.
+    * Connected Pattern:
+    * Source Dataset(s): 2023 Ohio BRFSS Regions
+* Environment is a factor that affects health outcomes
+    * Rationale: Environmental factors like water cleanliness and air quality have a direct impact on health outcomes
+    * Connected Pattern:
+    * Source Dataset(s):
