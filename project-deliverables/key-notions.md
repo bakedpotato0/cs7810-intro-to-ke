@@ -40,3 +40,6 @@
     * Rationale: Environmental factors like water cleanliness and air quality have a direct impact on health outcomes
     * Connected Pattern:
     * Source Dataset(s):
+
+-person
+-population
