@@ -41,5 +41,5 @@
     * Connected Pattern: Reporting Event
     * Source Dataset(s):
 
--person
--population
+* A person is a human who is or was alive, and all the experiences and events that happened to them during that period.
+* A population is a number of persons in a given location.
