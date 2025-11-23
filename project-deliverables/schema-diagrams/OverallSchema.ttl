@@ -1,0 +1,1751 @@
+@prefix : <http://example.org/overallSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/overallSchema#> .
+
+<http://example.org/overallSchema> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/overallSchema#atTime
+:atTime rdf:type owl:ObjectProperty ;
+        rdfs:domain :Fix ;
+        rdfs:range :Time ;
+        rdfs:label "atTime" .
+
+
+###  http://example.org/overallSchema#canAfford
+:canAfford rdf:type owl:ObjectProperty ;
+           rdfs:domain :Income ;
+           rdfs:range :Healthcare_Access ;
+           rdfs:label "canAfford" .
+
+
+###  http://example.org/overallSchema#canAfford_1
+:canAfford_1 rdf:type owl:ObjectProperty ;
+             rdfs:domain :Income ;
+             rdfs:range :Healthcare_Access ;
+             rdfs:label "canAfford" .
+
+
+###  http://example.org/overallSchema#canAfford_2
+:canAfford_2 rdf:type owl:ObjectProperty ;
+             rdfs:domain :Income ;
+             rdfs:range :Healthcare_Access ;
+             rdfs:label "canAfford" .
+
+
+###  http://example.org/overallSchema#componentOf
+:componentOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :PharmacyAccess ;
+             rdfs:range :Healthcare_Access ;
+             rdfs:label "componentOf" .
+
+
+###  http://example.org/overallSchema#constitutedBy
+:constitutedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Boundary ;
+               rdfs:range :BoundaryLine ;
+               rdfs:label "constitutedBy" .
+
+
+###  http://example.org/overallSchema#determines
+:determines rdf:type owl:ObjectProperty ;
+            rdfs:domain :LifeSpan ;
+            rdfs:range :LifeEvent ;
+            rdfs:label "determines" .
+
+
+###  http://example.org/overallSchema#determines_1
+:determines_1 rdf:type owl:ObjectProperty ;
+              rdfs:domain :LifeSpan ;
+              rdfs:range :LifeEvent ;
+              rdfs:label "determines" .
+
+
+###  http://example.org/overallSchema#enables
+:enables rdf:type owl:ObjectProperty ;
+         rdfs:domain :Hospital_Access ;
+         rdfs:range :Trajectory ;
+         rdfs:label "enables" .
+
+
+###  http://example.org/overallSchema#endsAt
+:endsAt rdf:type owl:ObjectProperty ;
+        rdfs:domain :Trajectory ;
+        rdfs:range :Fix ;
+        rdfs:label "endsAt" .
+
+
+###  http://example.org/overallSchema#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain :HealthOutcome ;
+     rdfs:range :startingCondition ;
+     rdfs:label "has" .
+
+
+###  http://example.org/overallSchema#hasCondition
+:hasCondition rdf:type owl:ObjectProperty ;
+              rdfs:domain :Population ;
+              rdfs:range :PublicWelfare ;
+              rdfs:label "hasCondition" .
+
+
+###  http://example.org/overallSchema#hasCondition_1
+:hasCondition_1 rdf:type owl:ObjectProperty ;
+                rdfs:domain :IndividualHuman ;
+                rdfs:range :PublicWelfare ;
+                rdfs:label "hasCondition" .
+
+
+###  http://example.org/overallSchema#hasFirst
+:hasFirst rdf:type owl:ObjectProperty ;
+          rdfs:domain :Boundary ;
+          rdfs:range :BoundaryLine ;
+          rdfs:label "hasFirst" .
+
+
+###  http://example.org/overallSchema#hasLast
+:hasLast rdf:type owl:ObjectProperty ;
+         rdfs:domain :Boundary ;
+         rdfs:range :BoundaryLine ;
+         rdfs:label "hasLast" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent
+:hasMemberEvent rdf:type owl:ObjectProperty ;
+                rdfs:domain :RecurrentEventSeries ;
+                rdfs:range :LifeEvent ;
+                rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_1
+:hasMemberEvent_1 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEventCollection ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_10
+:hasMemberEvent_10 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_11
+:hasMemberEvent_11 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_12
+:hasMemberEvent_12 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_13
+:hasMemberEvent_13 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_14
+:hasMemberEvent_14 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_15
+:hasMemberEvent_15 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_16
+:hasMemberEvent_16 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_17
+:hasMemberEvent_17 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_18
+:hasMemberEvent_18 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_19
+:hasMemberEvent_19 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_2
+:hasMemberEvent_2 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_20
+:hasMemberEvent_20 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_21
+:hasMemberEvent_21 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_22
+:hasMemberEvent_22 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_23
+:hasMemberEvent_23 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_24
+:hasMemberEvent_24 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_25
+:hasMemberEvent_25 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_26
+:hasMemberEvent_26 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_27
+:hasMemberEvent_27 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_28
+:hasMemberEvent_28 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_29
+:hasMemberEvent_29 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_3
+:hasMemberEvent_3 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_30
+:hasMemberEvent_30 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_31
+:hasMemberEvent_31 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_32
+:hasMemberEvent_32 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_33
+:hasMemberEvent_33 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_34
+:hasMemberEvent_34 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_35
+:hasMemberEvent_35 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_36
+:hasMemberEvent_36 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_37
+:hasMemberEvent_37 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_38
+:hasMemberEvent_38 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_39
+:hasMemberEvent_39 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_4
+:hasMemberEvent_4 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_40
+:hasMemberEvent_40 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_41
+:hasMemberEvent_41 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_42
+:hasMemberEvent_42 rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :LifeEvent ;
+                   rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_5
+:hasMemberEvent_5 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_6
+:hasMemberEvent_6 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_7
+:hasMemberEvent_7 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_8
+:hasMemberEvent_8 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMemberEvent_9
+:hasMemberEvent_9 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEventCollection ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasMemberEvent" .
+
+
+###  http://example.org/overallSchema#hasMultiple
+:hasMultiple rdf:type owl:ObjectProperty ;
+             rdfs:domain :IndividualHuman ;
+             rdfs:range :LifeEvent ;
+             rdfs:label "hasMultiple" .
+
+
+###  http://example.org/overallSchema#hasNext
+:hasNext rdf:type owl:ObjectProperty ;
+         rdfs:domain :Boundary ;
+         rdfs:range :Boundary ;
+         rdfs:label "hasNext" .
+
+
+###  http://example.org/overallSchema#hasNextEvent
+:hasNextEvent rdf:type owl:ObjectProperty ;
+              rdfs:domain :LifeEvent ;
+              rdfs:range :LifeEvent ;
+              rdfs:label "hasNextEvent" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_1
+:hasNextEvent_1 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_10
+:hasNextEvent_10 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_11
+:hasNextEvent_11 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_12
+:hasNextEvent_12 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_13
+:hasNextEvent_13 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_14
+:hasNextEvent_14 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_15
+:hasNextEvent_15 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_16
+:hasNextEvent_16 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_17
+:hasNextEvent_17 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_18
+:hasNextEvent_18 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_19
+:hasNextEvent_19 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_2
+:hasNextEvent_2 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_20
+:hasNextEvent_20 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_21
+:hasNextEvent_21 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_22
+:hasNextEvent_22 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_23
+:hasNextEvent_23 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_24
+:hasNextEvent_24 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_25
+:hasNextEvent_25 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_26
+:hasNextEvent_26 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_27
+:hasNextEvent_27 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_28
+:hasNextEvent_28 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_29
+:hasNextEvent_29 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_3
+:hasNextEvent_3 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_30
+:hasNextEvent_30 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_31
+:hasNextEvent_31 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_32
+:hasNextEvent_32 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_33
+:hasNextEvent_33 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_34
+:hasNextEvent_34 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_35
+:hasNextEvent_35 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_36
+:hasNextEvent_36 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_37
+:hasNextEvent_37 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_38
+:hasNextEvent_38 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_39
+:hasNextEvent_39 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :LifeEvent ;
+                 rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_4
+:hasNextEvent_4 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_5
+:hasNextEvent_5 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_6
+:hasNextEvent_6 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_7
+:hasNextEvent_7 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_8
+:hasNextEvent_8 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasNextEvent_9
+:hasNextEvent_9 rdf:type owl:ObjectProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range :LifeEvent ;
+                rdfs:label """hasNextEvent,
+hasPreviousEvent""" .
+
+
+###  http://example.org/overallSchema#hasOne
+:hasOne rdf:type owl:ObjectProperty ;
+        rdfs:domain :IndividualHuman ;
+        rdfs:range :EducationLevel ;
+        rdfs:label "hasOne" .
+
+
+###  http://example.org/overallSchema#hasPrevious
+:hasPrevious rdf:type owl:ObjectProperty ;
+             rdfs:domain :Boundary ;
+             rdfs:range :Boundary ;
+             rdfs:label "hasPrevious" .
+
+
+###  http://example.org/overallSchema#hasPreviousEvent
+:hasPreviousEvent rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :LifeEvent ;
+                  rdfs:label "hasPreviousEvent" .
+
+
+###  http://example.org/overallSchema#hasPreviousEvent_1
+:hasPreviousEvent_1 rdf:type owl:ObjectProperty ;
+                    rdfs:domain :LifeEvent ;
+                    rdfs:range :LifeEvent ;
+                    rdfs:label "hasPreviousEvent" .
+
+
+###  http://example.org/overallSchema#hasReferenceSystem
+:hasReferenceSystem rdf:type owl:ObjectProperty ;
+                    rdfs:domain :BoundaryLine ;
+                    rdfs:range :ReferenceSystem ;
+                    rdfs:label "hasReferenceSystem" .
+
+
+###  http://example.org/overallSchema#hasReferenceSystem_1
+:hasReferenceSystem_1 rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BoundaryLine ;
+                      rdfs:range :ReferenceSystem ;
+                      rdfs:label "hasReferenceSystem" .
+
+
+###  http://example.org/overallSchema#hasReferenceSystem_2
+:hasReferenceSystem_2 rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BoundaryLine ;
+                      rdfs:range :ReferenceSystem ;
+                      rdfs:label "hasReferenceSystem" .
+
+
+###  http://example.org/overallSchema#hasReferenceSystem_3
+:hasReferenceSystem_3 rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BoundaryLine ;
+                      rdfs:range :ReferenceSystem ;
+                      rdfs:label "hasReferenceSystem" .
+
+
+###  http://example.org/overallSchema#hasReferenceSystem_4
+:hasReferenceSystem_4 rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BoundaryLine ;
+                      rdfs:range :ReferenceSystem ;
+                      rdfs:label "hasReferenceSystem" .
+
+
+###  http://example.org/overallSchema#hasSegment
+:hasSegment rdf:type owl:ObjectProperty ;
+            rdfs:domain :Trajectory ;
+            rdfs:range :Segment ;
+            rdfs:label "hasSegment" .
+
+
+###  http://example.org/overallSchema#hasTime
+:hasTime rdf:type owl:ObjectProperty ;
+         rdfs:domain :Fix ;
+         rdfs:range :Time ;
+         rdfs:label "hasTime" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod
+:hasTimePeriod rdf:type owl:ObjectProperty ;
+               rdfs:domain :LifeEvent ;
+               rdfs:range :TimePeriod ;
+               rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_1
+:hasTimePeriod_1 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RecurrentEventSeries ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_10
+:hasTimePeriod_10 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_11
+:hasTimePeriod_11 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_12
+:hasTimePeriod_12 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_13
+:hasTimePeriod_13 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_14
+:hasTimePeriod_14 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_15
+:hasTimePeriod_15 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_16
+:hasTimePeriod_16 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_17
+:hasTimePeriod_17 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_18
+:hasTimePeriod_18 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_19
+:hasTimePeriod_19 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_2
+:hasTimePeriod_2 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_20
+:hasTimePeriod_20 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_21
+:hasTimePeriod_21 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_22
+:hasTimePeriod_22 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_23
+:hasTimePeriod_23 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_24
+:hasTimePeriod_24 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_25
+:hasTimePeriod_25 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_26
+:hasTimePeriod_26 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_27
+:hasTimePeriod_27 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_28
+:hasTimePeriod_28 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_29
+:hasTimePeriod_29 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_3
+:hasTimePeriod_3 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RecurrentEventSeries ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_30
+:hasTimePeriod_30 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_31
+:hasTimePeriod_31 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_32
+:hasTimePeriod_32 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RecurrentEventSeries ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_33
+:hasTimePeriod_33 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_34
+:hasTimePeriod_34 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_35
+:hasTimePeriod_35 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_36
+:hasTimePeriod_36 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_37
+:hasTimePeriod_37 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_38
+:hasTimePeriod_38 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_39
+:hasTimePeriod_39 rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range :TimePeriod ;
+                  rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_4
+:hasTimePeriod_4 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_5
+:hasTimePeriod_5 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RecurrentEventSeries ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_6
+:hasTimePeriod_6 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_7
+:hasTimePeriod_7 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RecurrentEventSeries ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_8
+:hasTimePeriod_8 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LifeEvent ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_9
+:hasTimePeriod_9 rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RecurrentEventSeries ;
+                 rdfs:range :TimePeriod ;
+                 rdfs:label "hasTimePeriod" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_BeforeNextEvent
+:hasTimePeriod_BeforeNextEvent rdf:type owl:ObjectProperty ;
+                               rdfs:domain :LifeEvent ;
+                               rdfs:range :TimePeriod ;
+                               rdfs:label """hasTimePeriod
+BeforeNextEvent""" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_BeforeNextEvent_1
+:hasTimePeriod_BeforeNextEvent_1 rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :LifeEvent ;
+                                 rdfs:range :TimePeriod ;
+                                 rdfs:label """hasTimePeriod
+BeforeNextEvent""" .
+
+
+###  http://example.org/overallSchema#hasTimePeriod_BeforeNextEvent_2
+:hasTimePeriod_BeforeNextEvent_2 rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :LifeEvent ;
+                                 rdfs:range :TimePeriod ;
+                                 rdfs:label """hasTimePeriod
+BeforeNextEvent""" .
+
+
+###  http://example.org/overallSchema#hasUnifyingFactor
+:hasUnifyingFactor rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RecurrentEventSeries ;
+                   rdfs:range :UnifyingFactor ;
+                   rdfs:label "hasUnifyingFactor" .
+
+
+###  http://example.org/overallSchema#hasUnifyingFactor_1
+:hasUnifyingFactor_1 rdf:type owl:ObjectProperty ;
+                     rdfs:domain :RecurrentEventSeries ;
+                     rdfs:range :UnifyingFactor ;
+                     rdfs:label "hasUnifyingFactor" .
+
+
+###  http://example.org/overallSchema#hasValue
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:domain :BoundaryLine ;
+          rdfs:range :Value ;
+          rdfs:label "hasValue" .
+
+
+###  http://example.org/overallSchema#has_1
+:has_1 rdf:type owl:ObjectProperty ;
+       rdfs:domain :HealthOutcome ;
+       rdfs:range :startingCondition ;
+       rdfs:label "has" .
+
+
+###  http://example.org/overallSchema#has_2
+:has_2 rdf:type owl:ObjectProperty ;
+       rdfs:domain :HealthOutcome ;
+       rdfs:range :endingCondition ;
+       rdfs:label "has" .
+
+
+###  http://example.org/overallSchema#influences
+:influences rdf:type owl:ObjectProperty ;
+            rdfs:domain :Location ;
+            rdfs:range :Healthcare_Access ;
+            rdfs:label "influences" .
+
+
+###  http://example.org/overallSchema#influencesChance
+:influencesChance rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Action ;
+                  rdfs:range :HealthOutcome ;
+                  rdfs:label "influencesChance" .
+
+
+###  http://example.org/overallSchema#influencesChance_1
+:influencesChance_1 rdf:type owl:ObjectProperty ;
+                    rdfs:domain :IndividualHuman ;
+                    rdfs:range :HealthOutcome ;
+                    rdfs:label "influencesChance" .
+
+
+###  http://example.org/overallSchema#influencesChance_2
+:influencesChance_2 rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Environment ;
+                    rdfs:range :HealthOutcome ;
+                    rdfs:label "influencesChance" .
+
+
+###  http://example.org/overallSchema#influencesChance_3
+:influencesChance_3 rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Action ;
+                    rdfs:range :HealthOutcome ;
+                    rdfs:label "influencesChance" .
+
+
+###  http://example.org/overallSchema#influences_1
+:influences_1 rdf:type owl:ObjectProperty ;
+              rdfs:domain :Location ;
+              rdfs:range :HealthOutcome ;
+              rdfs:label "influences" .
+
+
+###  http://example.org/overallSchema#influences_2
+:influences_2 rdf:type owl:ObjectProperty ;
+              rdfs:domain :Location ;
+              rdfs:range :HealthOutcome ;
+              rdfs:label "influences" .
+
+
+###  http://example.org/overallSchema#isDefinedBy
+:isDefinedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Sublocation ;
+             rdfs:range :Boundaries ;
+             rdfs:label "isDefinedBy" .
+
+
+###  http://example.org/overallSchema#livesIn
+:livesIn rdf:type owl:ObjectProperty ;
+         rdfs:domain :Population ;
+         rdfs:range :Location ;
+         rdfs:label "livesIn" .
+
+
+###  http://example.org/overallSchema#nextFix
+:nextFix rdf:type owl:ObjectProperty ;
+         rdfs:domain :Fix ;
+         rdfs:range :Fix ;
+         rdfs:label "nextFix" .
+
+
+###  http://example.org/overallSchema#performs
+:performs rdf:type owl:ObjectProperty ;
+          rdfs:domain :IndividualHuman ;
+          rdfs:range :Action ;
+          rdfs:label "performs" .
+
+
+###  http://example.org/overallSchema#previousFix
+:previousFix rdf:type owl:ObjectProperty ;
+             rdfs:domain :Fix ;
+             rdfs:range :Fix ;
+             rdfs:label "previousFix" .
+
+
+###  http://example.org/overallSchema#startsFrom
+:startsFrom rdf:type owl:ObjectProperty ;
+            rdfs:domain :Trajectory ;
+            rdfs:range :Fix ;
+            rdfs:label "startsFrom" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/overallSchema#Pollution_Type_Description
+:Pollution_Type_Description rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Pollution_Type ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "Pollution Type" .
+
+
+###  http://example.org/overallSchema#alias
+:alias rdf:type owl:DatatypeProperty ;
+       rdfs:domain :IndividualHuman ;
+       rdfs:range xsd:string ;
+       rdfs:label "alias" .
+
+
+###  http://example.org/overallSchema#conditions
+:conditions rdf:type owl:DatatypeProperty ;
+            rdfs:domain :GeneticPredisposition ;
+            rdfs:range xsd:string ;
+            rdfs:label "conditions" .
+
+
+###  http://example.org/overallSchema#conditions_1
+:conditions_1 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :GeneticPredisposition ;
+              rdfs:range xsd:string ;
+              rdfs:label "conditions" .
+
+
+###  http://example.org/overallSchema#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PublicWelfare ;
+             rdfs:range xsd:string ;
+             rdfs:label "description" .
+
+
+###  http://example.org/overallSchema#description_1
+:description_1 rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Environment ;
+               rdfs:range xsd:string ;
+               rdfs:label "description" .
+
+
+###  http://example.org/overallSchema#endingCondition_1
+:endingCondition_1 rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :endingCondition ;
+                   rdfs:range xsd:double ;
+                   rdfs:label "endingCondition" .
+
+
+###  http://example.org/overallSchema#endingCondition_Value
+:endingCondition_Value rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :endingCondition ;
+                       rdfs:range xsd:double ;
+                       rdfs:label "endingCondition" .
+
+
+###  http://example.org/overallSchema#hasCost
+:hasCost rdf:type owl:DatatypeProperty ;
+         rdfs:domain :HealthOutcome ;
+         rdfs:range xsd:double ;
+         rdfs:label "hasCost" .
+
+
+###  http://example.org/overallSchema#hasCost_1
+:hasCost_1 rdf:type owl:DatatypeProperty ;
+           rdfs:domain :HealthOutcome ;
+           rdfs:range xsd:double ;
+           rdfs:label "hasCost" .
+
+
+###  http://example.org/overallSchema#hasEventNumber
+:hasEventNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range xsd:integer ;
+                rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_1
+:hasEventNumber_1 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_2
+:hasEventNumber_2 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_3
+:hasEventNumber_3 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_4
+:hasEventNumber_4 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_5
+:hasEventNumber_5 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_6
+:hasEventNumber_6 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasEventNumber_7
+:hasEventNumber_7 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LifeEvent ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "hasEventNumber" .
+
+
+###  http://example.org/overallSchema#hasValue_1
+:hasValue_1 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Income ;
+            rdfs:range xsd:double ;
+            rdfs:label "hasValue" .
+
+
+###  http://example.org/overallSchema#hasValue_2
+:hasValue_2 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Currency ;
+            rdfs:range xsd:double ;
+            rdfs:label "hasValue" .
+
+
+###  http://example.org/overallSchema#hasValue_3
+:hasValue_3 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :BoundaryLine ;
+            rdfs:range xsd:string ;
+            rdfs:label "hasValue" .
+
+
+###  http://example.org/overallSchema#hasValue_4
+:hasValue_4 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :BoundaryLine ;
+            rdfs:range xsd:string ;
+            rdfs:label "hasValue" .
+
+
+###  http://example.org/overallSchema#highestAchieved
+:highestAchieved rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :EducationLevel ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "highestAchieved" .
+
+
+###  http://example.org/overallSchema#isTheLastEvent
+:isTheLastEvent rdf:type owl:DatatypeProperty ;
+                rdfs:domain :LifeEvent ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "isTheLastEvent" .
+
+
+###  http://example.org/overallSchema#locationDescription
+:locationDescription rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Location ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "locationDescription" .
+
+
+###  http://example.org/overallSchema#measureOfTime
+:measureOfTime rdf:type owl:DatatypeProperty ;
+               rdfs:domain :LifeSpan ;
+               rdfs:range xsd:double ;
+               rdfs:label "measureOfTime" .
+
+
+###  http://example.org/overallSchema#populationCount
+:populationCount rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Population ;
+                 rdfs:range xsd:int ;
+                 rdfs:label "populationCount" .
+
+
+###  http://example.org/overallSchema#startingCondition_1
+:startingCondition_1 rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :startingCondition ;
+                     rdfs:range xsd:double ;
+                     rdfs:label "startingCondition" .
+
+
+###  http://example.org/overallSchema#startingCondition_Value
+:startingCondition_Value rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :startingCondition ;
+                         rdfs:range xsd:double ;
+                         rdfs:label "startingCondition" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/overallSchema#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :KeyBehaviors ;
+        rdfs:label "Action" .
+
+
+###  http://example.org/overallSchema#Boundaries
+:Boundaries rdf:type owl:Class ;
+            rdfs:subClassOf :Sublocation ;
+            rdfs:label "Boundaries" .
+
+
+###  http://example.org/overallSchema#Boundary
+:Boundary rdf:type owl:Class ;
+          rdfs:subClassOf :Boundaries ;
+          rdfs:label "Boundary" .
+
+
+###  http://example.org/overallSchema#BoundaryLine
+:BoundaryLine rdf:type owl:Class ;
+              rdfs:subClassOf :Boundary ;
+              rdfs:label "BoundaryLine" .
+
+
+###  http://example.org/overallSchema#Concept
+:Concept rdf:type owl:Class ;
+         rdfs:subClassOf :UnifyingFactor ;
+         rdfs:label "Concept" .
+
+
+###  http://example.org/overallSchema#Currency
+:Currency rdf:type owl:Class ;
+          rdfs:subClassOf :Income ;
+          rdfs:label "Currency" .
+
+
+###  http://example.org/overallSchema#EducationLevel
+:EducationLevel rdf:type owl:Class ;
+                rdfs:subClassOf :IndividualHuman ;
+                rdfs:label "EducationLevel" .
+
+
+###  http://example.org/overallSchema#EndingFix
+:EndingFix rdf:type owl:Class ;
+           rdfs:subClassOf :Fix ;
+           rdfs:label "EndingFix" .
+
+
+###  http://example.org/overallSchema#Environment
+:Environment rdf:type owl:Class ;
+             rdfs:subClassOf :EnvironmentModule ;
+             rdfs:label "Environment" .
+
+
+###  http://example.org/overallSchema#EnvironmentModule
+:EnvironmentModule rdf:type owl:Class ;
+                   rdfs:label "Environment Module" .
+
+
+###  http://example.org/overallSchema#EventualDeath
+:EventualDeath rdf:type owl:Class ;
+               rdfs:subClassOf :LifeEvent ;
+               rdfs:label "EventualDeath" .
+
+
+###  http://example.org/overallSchema#Fix
+:Fix rdf:type owl:Class ;
+     rdfs:subClassOf :Healthcare_Access ;
+     rdfs:label "Fix" .
+
+
+###  http://example.org/overallSchema#GeneticPredisposition
+:GeneticPredisposition rdf:type owl:Class ;
+                       rdfs:subClassOf :IndividualHuman ;
+                       rdfs:label "GeneticPredisposition" .
+
+
+###  http://example.org/overallSchema#HealthOutcome
+:HealthOutcome rdf:type owl:Class ;
+               rdfs:subClassOf :HealthOutcomeModule ;
+               rdfs:label "HealthOutcome" .
+
+
+###  http://example.org/overallSchema#HealthOutcomeModule
+:HealthOutcomeModule rdf:type owl:Class ;
+                     rdfs:label "HealthOutcomeModule" .
+
+
+###  http://example.org/overallSchema#Healthcare
+:Healthcare rdf:type owl:Class ;
+            rdfs:subClassOf :Healthcare_Access ;
+            rdfs:label "Healthcare" .
+
+
+###  http://example.org/overallSchema#Healthcare_Access
+:Healthcare_Access rdf:type owl:Class ;
+                   rdfs:label "Healthcare Access" .
+
+
+###  http://example.org/overallSchema#Hospital_Access
+:Hospital_Access rdf:type owl:Class ;
+                 rdfs:subClassOf :Healthcare_Access ;
+                 rdfs:label "Hospital Access" .
+
+
+###  http://example.org/overallSchema#Income
+:Income rdf:type owl:Class ;
+        rdfs:subClassOf :Wealth_Module ;
+        rdfs:label "Income" .
+
+
+###  http://example.org/overallSchema#IndividualHuman
+:IndividualHuman rdf:type owl:Class ;
+                 rdfs:subClassOf :PersonModule ;
+                 rdfs:label "IndividualHuman" .
+
+
+###  http://example.org/overallSchema#KeyBehaviors
+:KeyBehaviors rdf:type owl:Class ;
+              rdfs:label "KeyBehaviorsModule" .
+
+
+###  http://example.org/overallSchema#LifeEvent
+:LifeEvent rdf:type owl:Class ;
+           rdfs:subClassOf :LifeEventModule ;
+           rdfs:label "LifeEvent" .
+
+
+###  http://example.org/overallSchema#LifeEventCollection
+:LifeEventCollection rdf:type owl:Class ;
+                     rdfs:subClassOf :RecurrentEventSeries ;
+                     rdfs:label "LifeEventCollection" .
+
+
+###  http://example.org/overallSchema#LifeEventModule
+:LifeEventModule rdf:type owl:Class ;
+                 rdfs:label "LifeEventModule" .
+
+
+###  http://example.org/overallSchema#LifeSpan
+:LifeSpan rdf:type owl:Class ;
+          rdfs:subClassOf :IndividualHuman ;
+          rdfs:label "LifeSpan" .
+
+
+###  http://example.org/overallSchema#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :LocationModule ;
+          rdfs:label "Location" .
+
+
+###  http://example.org/overallSchema#LocationModule
+:LocationModule rdf:type owl:Class ;
+                rdfs:label "Location Module" .
+
+
+###  http://example.org/overallSchema#OngoingSituation
+:OngoingSituation rdf:type owl:Class ;
+                  rdfs:subClassOf :RecurrentEventSeries ;
+                  rdfs:label "OngoingSituation" .
+
+
+###  http://example.org/overallSchema#PersonModule
+:PersonModule rdf:type owl:Class ;
+              rdfs:label "Person Module" .
+
+
+###  http://example.org/overallSchema#PharmacyAccess
+:PharmacyAccess rdf:type owl:Class ;
+                rdfs:subClassOf :Healthcare_Access ;
+                rdfs:label "PharmacyAccess" .
+
+
+###  http://example.org/overallSchema#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf :Fix ;
+       rdfs:label "Place" .
+
+
+###  http://example.org/overallSchema#Pollution_Type
+:Pollution_Type rdf:type owl:Class ;
+                rdfs:subClassOf :Environment ;
+                rdfs:label "Pollution Type" .
+
+
+###  http://example.org/overallSchema#Population
+:Population rdf:type owl:Class ;
+            rdfs:subClassOf :PopulationModule ;
+            rdfs:label "Population" .
+
+
+###  http://example.org/overallSchema#PopulationModule
+:PopulationModule rdf:type owl:Class ;
+                  rdfs:label "Population Module" .
+
+
+###  http://example.org/overallSchema#PublicWelfare
+:PublicWelfare rdf:type owl:Class ;
+               rdfs:subClassOf :PopulationModule ;
+               rdfs:label "PublicWelfare" .
+
+
+###  http://example.org/overallSchema#RecurrentEventSeries
+:RecurrentEventSeries rdf:type owl:Class ;
+                      rdfs:subClassOf :LifeEvent ;
+                      rdfs:label "RecurrentEventSeries" .
+
+
+###  http://example.org/overallSchema#ReferenceSystem
+:ReferenceSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :BoundaryLine ;
+                 rdfs:label "ReferenceSystem" .
+
+
+###  http://example.org/overallSchema#Segment
+:Segment rdf:type owl:Class ;
+         rdfs:subClassOf :Healthcare_Access ;
+         rdfs:label "Segment" .
+
+
+###  http://example.org/overallSchema#StartingFix
+:StartingFix rdf:type owl:Class ;
+             rdfs:subClassOf :Fix ;
+             rdfs:label "StartingFix" .
+
+
+###  http://example.org/overallSchema#Sublocation
+:Sublocation rdf:type owl:Class ;
+             rdfs:subClassOf :Location ;
+             rdfs:label "Sublocation" .
+
+
+###  http://example.org/overallSchema#Time
+:Time rdf:type owl:Class ;
+      rdfs:subClassOf :Fix ;
+      rdfs:label "Time" .
+
+
+###  http://example.org/overallSchema#TimePeriod
+:TimePeriod rdf:type owl:Class ;
+            rdfs:subClassOf :LifeEvent ;
+            rdfs:label "TimePeriod" .
+
+
+###  http://example.org/overallSchema#Trajectory
+:Trajectory rdf:type owl:Class ;
+            rdfs:subClassOf :Healthcare_Access ;
+            rdfs:label "Trajectory" .
+
+
+###  http://example.org/overallSchema#UnifyingFactor
+:UnifyingFactor rdf:type owl:Class ;
+                rdfs:subClassOf :RecurrentEventSeries ;
+                rdfs:label "UnifyingFactor" .
+
+
+###  http://example.org/overallSchema#Value
+:Value rdf:type owl:Class ;
+       rdfs:subClassOf :BoundaryLine ;
+       rdfs:label "Value" .
+
+
+###  http://example.org/overallSchema#Wealth_Module
+:Wealth_Module rdf:type owl:Class ;
+               rdfs:label "Wealth Module" .
+
+
+###  http://example.org/overallSchema#endingCondition
+:endingCondition rdf:type owl:Class ;
+                 rdfs:subClassOf :HealthOutcome ;
+                 rdfs:label "endingCondition" .
+
+
+###  http://example.org/overallSchema#startingCondition
+:startingCondition rdf:type owl:Class ;
+                   rdfs:subClassOf :HealthOutcome ;
+                   rdfs:label "startingCondition" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
