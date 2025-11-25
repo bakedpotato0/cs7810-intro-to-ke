@@ -7,7 +7,7 @@
 
 ### Axioms
 * `EducationLevel subClassOf Education` <br />
-If there is Education, there is an Education Level descriptor.
+If there is Education, there is an EducationLevel descriptor.
 * `EducationLevel subClassOf Education some Income.` <br />
 If there is some EducationLevel, it is usually an influence on Income level.
 
@@ -28,8 +28,8 @@ If an Environment exists, it may influence the chance of certain HealthOutcomes.
 HospitalAccess is a component of HealthcareAccess.
 * `PharmacyAccess subClassOf HealthcareAccess` <br />
 PharmacyAccess is a component of HealthcareAccess.
-* `Pharmacyaccess DisjointWith hospitalaccess` <br />
-A Hospital oftentimes contains its own Pharmacy, but its Pharmacy is generally only used by immediate patients. PharmacyAccess data refers to Pharmacy locations not attached to a Hospital.
+* `Pharmacyaccess DisjointWith HospitalAccess` <br />
+A Hospital oftentimes contains its own Pharmacy, but the concern of PharmacyAccess is to supply an IndividualHuman with medication for treating a Condition outside of a Hospital setting.
 * `HealthcareAccess subClassOf HealthcareAccess Module some Healthcare` <br />
 If there is HealthcareAccess, then there is some level of Healthcare accessible.
 * `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
@@ -40,7 +40,7 @@ If there is an EndingFix, there is some (positive or negative) influence on a He
 
 ### Axioms
 * `HealthOutcome subClassOf LifeEvent some Cost` <br />
-A HealthOutcome is a type of LifeEvent that has some Cost.
+A HealthOutcome is a type of LifeEvent that has some Cost and influences further LifeEvents.
 * `HealthOutcome subClassOf LifeEvent some startingCondition` <br />
 If there is a HealthOutcome then there is a startingCondition with descriptor conditionDescription.
 * `HealthOutcome subClassOf LifeEvent some endingCondition` <br />
