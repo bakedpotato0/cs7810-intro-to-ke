@@ -1513,6 +1513,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#EndingFix
 :EndingFix rdf:type owl:Class ;
+           owl:equivalentClass :StartingFix ;
            rdfs:subClassOf :Fix ;
            rdfs:label "EndingFix" .
 
@@ -1570,6 +1571,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#Hospital_Access
 :Hospital_Access rdf:type owl:Class ;
+                 owl:equivalentClass :PharmacyAccess ;
                  rdfs:subClassOf :Healthcare_Access ;
                  rdfs:label "Hospital Access" .
 
@@ -1599,6 +1601,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#LifeEventCollection
 :LifeEventCollection rdf:type owl:Class ;
+                     owl:equivalentClass :OngoingSituation ;
                      rdfs:subClassOf :RecurrentEventSeries ;
                      rdfs:label "LifeEventCollection" .
 
@@ -1667,7 +1670,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#PublicWelfare
 :PublicWelfare rdf:type owl:Class ;
-               rdfs:subClassOf :PopulationModule ;
+               rdfs:subClassOf :Population ;
                rdfs:label "PublicWelfare" .
 
 
@@ -1743,6 +1746,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#endingCondition
 :endingCondition rdf:type owl:Class ;
+                 owl:equivalentClass :startingCondition ;
                  rdfs:subClassOf :HealthOutcome ;
                  rdfs:label "endingCondition" .
 
