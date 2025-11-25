@@ -15,7 +15,7 @@ If there is some EducationLevel, it is usually an influence on Income level.
 ![schema-diagram](schema-diagrams/environment.jpg)
 
 ### Axioms
-* `Environment some describable PollutionType` <br />
+* `Environment some PollutionType` <br />
 If an Environment exists, it must have some description of its PollutionType (including "clean"/"sterile").
 * `Environment some HealthOutcome` <br />
 If an Environment exists, it may influence the chance of certain HealthOutcomes.
