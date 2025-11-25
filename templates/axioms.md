@@ -23,3 +23,20 @@ natural language description
 natural language description
 * `wealth SubclassOf canAfford some healthcareaccess` <br />
 natural language description
+
+## Person
+![schema-diagram](relative/path/to/schema/diagram)
+
+### Axioms
+* `person SubclassOf hasOne lifespan` <br />
+natural language description
+* `peson SubclassOf has some racialattribute` <br />
+natural language description
+* `peson SubclassOf hasOne max 1 educationlevel` <br />
+natural language description
+* `peson SubclassOf hasOne max 1 income` <br />
+natural language description
+* `peson SubclassOf performs only keybehaviors` <br />
+natural language description
+* `madeof some popuiation SubclassOf person` <br />
+natural language description
