@@ -1,4 +1,4 @@
-# Name of Ontology
+# Factorizing Determinants of Human Health
 
 ![all-schemas](schema-diagrams)
 
@@ -9,6 +9,14 @@
 * `EducationLevel subClassOf Education` <br />
 If there is Education, there is an Education Level descriptor.
 
+## Environment Module
+![schema-diagram](schema-diagrams/environment.jpg)
+
+### Axioms
+* `axiom in manchester syntax` <br />
+natural language description
+* `axiom in manchester syntax` <br />
+natural language description
 
 ## HealthcareAccess Module
 ![schema-diagram](schema-diagrams/PharmacyAccess.jpg)
@@ -18,6 +26,8 @@ If there is Education, there is an Education Level descriptor.
 HospitalAccess is a component of HealthcareAccess.
 * `PharmacyAccess subClassOf HealthcareAccess` <br />
 PharmacyAccess is a component of HealthcareAccess.
+* `Pharmacyaccess DisjointWith hospitalaccess` <br />
+A Hospital oftentimes contains its own Pharmacy, but its Pharmacy is generally only used by immediate patients. PharmacyAccess data refers to Pharmacy locations not attached to a Hospital.
 * `HealthcareAccess subClassOf HealthcareAccess Module some Healthcare` <br />
 If there is HealthcareAccess, then there is some level of Healthcare accessible.
 * `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
@@ -35,7 +45,7 @@ If there is a HealthOutcome then there is a startingCondition with descriptor co
 If there is a HealthOutcome then there is an endingCondition with descriptor conditionDescription.
 
 ## KeyBehaviors Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/keyBehaviors.jpg)
 
 ### Axioms
 * `axiom in manchester syntax` <br />
@@ -44,7 +54,7 @@ natural language description
 natural language description
 
 ## Life Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/LifeModule.jpg)
 
 ### Axioms
 * `axiom in manchester syntax` <br />
@@ -53,7 +63,7 @@ natural language description
 natural language description
 
 ## LifeEvent Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
 ### Axioms
 * `axiom in manchester syntax` <br />
@@ -70,13 +80,17 @@ natural language description
 * `axiom in manchester syntax` <br />
 natural language description
 
-## Person Module
+## Person
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
+* `IndividualHuman SubclassOf Person max 1 Lifespan` <br />
 natural language description
-* `axiom in manchester syntax` <br />
+* `IndividualHuman subclassOf Person some RacialAttribute` <br />
+If an IndividualHuman exists, that IndividualHuman has some RacialAttribute.
+* `IndividualHuman SubclassOf Person max 1 EducationLevel` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one generally-quantifiable EducationLevel.
+* `IndividualHuman SubclassOf Person max 1 Income` <br />
 natural language description
 
 ## Population Module
@@ -92,27 +106,16 @@ natural language description
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `GeneticPredisposition subClassOf RacialAttribute some Condition` <br />
+If a RacialAttribute includes a given GeneticPredispostion, there are corresponding medical Conditons that are more likely.
+* `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome` <br />
+If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
 
-## Wealth Module
+## Wealth
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
-
-## Name of Module
-![schema-diagram](relative/path/to/schema/diagram)
-
-### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Currency SubclassOf Income some Value` <br />
+If Currency is a type of Income, it has some quantifiable monetary Value.
+* `Wealth SubclassOf WealthModule some Healthcare` <br />
+If Wealth exists, some level of Healthcare can be afforded.
