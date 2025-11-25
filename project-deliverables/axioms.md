@@ -15,9 +15,9 @@ If there is some EducationLevel, it is usually an influence on Income level.
 ![schema-diagram](schema-diagrams/environment.jpg)
 
 ### Axioms
-* `Environment some PollutionType` <br />
+* `Environment subClassOf Environment Module some PollutionType` <br />
 If an Environment exists, it must have some description of its PollutionType (including "clean"/"sterile").
-* `Environment some HealthOutcome` <br />
+* `Environment subClassOf Environment Module some HealthOutcome` <br />
 If an Environment exists, it may influence the chance of certain HealthOutcomes.
 
 ## HealthcareAccess Module
@@ -75,7 +75,7 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `Location some HealthcareAccess` <br />
+* `Location subClassOf Location Module some HealthcareAccess` <br />
 If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
 
 ## Person
@@ -107,9 +107,9 @@ If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes durin
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
 ### Axioms
-* `Population some Location` <br />
+* `Population subClassOf Population Module some Location` <br />
 If a Population exists, it must have some describable Location.
-* `Population some populationCount` <br />
+* `Population subClassOf Population Module some populationCount` <br />
 If a Population exists, it must have some countable number of members.
 * `PublicWelfare subClassOf Population some Condition` <br />
 If a Population exists, it must have some description of its PublicWelfare.
