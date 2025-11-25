@@ -31,9 +31,9 @@ PharmacyAccess is a component of HealthcareAccess.
 * `Pharmacyaccess DisjointWith HospitalAccess` <br />
 A Hospital oftentimes contains its own Pharmacy, but the concern of PharmacyAccess is to supply an IndividualHuman with medication for treating a Condition outside of a Hospital setting.
 * `HealthcareAccess subClassOf HealthcareAccess Module some Healthcare` <br />
-If there is HealthcareAccess, then there is some level of Healthcare accessible.
+If there is HealthcareAccess, then there is some level of Healthcare service accessible.
 * `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
-If there is an EndingFix, there is some (positive or negative) influence on a HealthOutcome.
+If there is an EndingFix, there is some (positive or negative) influence on the chance of a HealthOutcome.
 
 ## HealthOutcomes Module
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
@@ -125,7 +125,7 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 ### Axioms
 * `Currency subClassOf Income some Value` <br />
 If Currency is a type of Income, it has some quantifiable monetary Value.
-* `Income subClassOf WealthModule some Healthcare` <br />
-If Wealth exists, some level of Healthcare can be afforded.
+* `Income subClassOf WealthModule some HealthcareAccess` <br />
+If Wealth exists, some level of HealthcareAccess can be afforded.
 * `Income subClassOf WealthModule some EducationLevel.` <br />
 If a Person has some Income, it enables that Person to obtain some EducationLevel.
