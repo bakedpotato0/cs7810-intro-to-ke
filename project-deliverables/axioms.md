@@ -42,9 +42,9 @@ If there is an EndingFix, there is some (positive or negative) influence on the 
 * `HealthOutcome subClassOf LifeEvent some Cost` <br />
 A HealthOutcome is a type of LifeEvent that has some Cost and influences further LifeEvents.
 * `HealthOutcome subClassOf LifeEvent some startingCondition` <br />
-If there is a HealthOutcome then there is a startingCondition with descriptor conditionDescription.
+If there is a HealthOutcome, then there is a startingCondition with descriptor conditionDescription.
 * `HealthOutcome subClassOf LifeEvent some endingCondition` <br />
-If there is a HealthOutcome then there is an endingCondition with descriptor conditionDescription.
+If there is a HealthOutcome, then there is an endingCondition with descriptor conditionDescription.
 
 ## KeyBehaviors Module
 ![schema-diagram](schema-diagrams/keyBehaviors.jpg)
@@ -67,7 +67,7 @@ If a LifeSpan exists, its length of Time can be measured.
 
 ### Axioms
 * `LifeEvent subClassOf RecurrentEvent some LifeEvent` <br />
-LifeEvents lead to more LifeEvents until the cycle reaches EventualDeath.
+LifeEvents lead to more LifeEvents, until the cycle reaches EventualDeath.
 * `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
 If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
@@ -76,7 +76,7 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 
 ### Axioms
 * `Location some HealthcareAccess` <br />
-If some Location exists, it has some influence on HealthcareAccess services, including distance to Hospitals, Pharmacies, and other Healthcare services.
+If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
 
 ## Person
 ![schema-diagram](schema-diagrams/person.jpg)
@@ -93,13 +93,15 @@ If an IndividualHuman exists, that IndividualHuman has at most one total quantif
 * `IndividualHuman subClassOf Person max 1 alias` <br />
 If an IndividualHuman exists, that IndividualHuman has at most one alias in the data. This alias must be kept anonymized in the model for privacy and security reasons.
 * `IndividualHuman subClassOf Person some Condition` <br />
-If an IndividualHuman exists, that IndividualHuman has some describable Condition (healthy, ill, etc.).
+If an IndividualHuman exists, that IndividualHuman has some describable Condition ("healthy," "ill," or something more detailed).
 * `IndividualHuman subClassOf Person some Environment` <br />
-If an IndividualHuman exists, that IndividualHuman must inhabit some describable Environment, and may work in the same or a different Environment.
+If an IndividualHuman exists, that IndividualHuman must inhabit some describable Environment, and may work a job in the same or a different Environment.
 * `IndividualHuman subClassOf Person some Population` <br />
 If an IndividualHuman exists, that IndividualHuman is a member of some Population.
 * `IndividualHuman subClassOf Person some Action` <br />
 If an IndividualHuman exists, that IndividualHuman performs some Action.
+* `IndividualHuman subClassOf Person some HealthOutcome` <br />
+If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes during their LifeSpan.
 
 ## Population Module
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
@@ -107,6 +109,8 @@ If an IndividualHuman exists, that IndividualHuman performs some Action.
 ### Axioms
 * `Population some Location` <br />
 If a Population exists, it must have some describable Location.
+* `Population some populationCount` <br />
+If a Population exists, it must have some countable number of members.
 * `PublicWelfare subClassOf Population some Condition` <br />
 If a Population exists, it must have some description of its PublicWelfare.
 
