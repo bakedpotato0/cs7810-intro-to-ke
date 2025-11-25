@@ -21,5 +21,5 @@ natural language description
 ### Axioms
 * `income SubclassOf hasValue only currency` <br />
 natural language description
-* `wealth SubclassOf canAfford some healthcare` <br />
+* `wealth SubclassOf canAfford some healthcareaccess` <br />
 natural language description
