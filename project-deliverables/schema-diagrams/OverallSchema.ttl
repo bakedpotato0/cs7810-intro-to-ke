@@ -1507,8 +1507,13 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#EducationLevel
 :EducationLevel rdf:type owl:Class ;
-                rdfs:subClassOf :IndividualHuman ;
+                rdfs:subClassOf :EducationModule ;
                 rdfs:label "EducationLevel" .
+
+
+###  http://example.org/overallSchema#EducationModule
+:EducationModule rdf:type owl:Class ;
+                 rdfs:label "Education Module" .
 
 
 ###  http://example.org/overallSchema#EndingFix
@@ -1543,7 +1548,7 @@ BeforeNextEvent""" .
 
 ###  http://example.org/overallSchema#GeneticPredisposition
 :GeneticPredisposition rdf:type owl:Class ;
-                       rdfs:subClassOf :IndividualHuman ;
+                       rdfs:subClassOf :RacialAttributeModule ;
                        rdfs:label "GeneticPredisposition" .
 
 
@@ -1611,9 +1616,14 @@ BeforeNextEvent""" .
                  rdfs:label "LifeEventModule" .
 
 
+###  http://example.org/overallSchema#LifeModule
+:LifeModule rdf:type owl:Class ;
+            rdfs:label "Life Module" .
+
+
 ###  http://example.org/overallSchema#LifeSpan
 :LifeSpan rdf:type owl:Class ;
-          rdfs:subClassOf :IndividualHuman ;
+          rdfs:subClassOf :LifeModule ;
           rdfs:label "LifeSpan" .
 
 
