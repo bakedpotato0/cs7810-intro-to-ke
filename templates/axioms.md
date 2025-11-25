@@ -2,20 +2,24 @@
 
 ![all-schemas](relative/path/to/all/schemas)
 
-## Name of Module
+## HealthcareAccess
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
+* `pharmacyaccess SubclassOf healthcareaccess` <br />
 natural language description
-* `axiom in manchester syntax` <br />
+* `hospitalaccess SubclassOf healthcareaccess` <br />
+natural language description
+* `pharmacyaccess DisjointWith hospitalaccess` <br />
+natural language description
+* `healthcareaccess SubclassOf includes max 1 healthcare` <br />
 natural language description
 
-## Name of Module
+## Wealth
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
+* `income SubclassOf hasValue only currency` <br />
 natural language description
-* `axiom in manchester syntax` <br />
+* `wealth SubclassOf canAfford some healthcare` <br />
 natural language description
