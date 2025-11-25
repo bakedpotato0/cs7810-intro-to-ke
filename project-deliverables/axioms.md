@@ -8,6 +8,8 @@
 ### Axioms
 * `EducationLevel subClassOf Education` <br />
 If there is Education, there is an Education Level descriptor.
+* `EducationLevel subClassOf Education some Income.` <br />
+If there is some EducationLevel, it is usually a large influence on Income level.
 
 ## Environment Module
 ![schema-diagram](schema-diagrams/environment.jpg)
@@ -115,7 +117,9 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
 ### Axioms
-* `Currency SubclassOf Income some Value` <br />
+* `Currency subclassOf Income some Value` <br />
 If Currency is a type of Income, it has some quantifiable monetary Value.
-* `Wealth SubclassOf WealthModule some Healthcare` <br />
+* `Income subclassOf WealthModule some Healthcare` <br />
 If Wealth exists, some level of Healthcare can be afforded.
+* `Income subClassOf WealthModule some EducationLevel.` <br />
+If a Person has some Income, it enables that Person to obtain some EducationLevel.
