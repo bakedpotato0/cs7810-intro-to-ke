@@ -9,16 +9,16 @@
 * `EducationLevel subClassOf Education` <br />
 If there is Education, there is an Education Level descriptor.
 * `EducationLevel subClassOf Education some Income.` <br />
-If there is some EducationLevel, it is usually a large influence on Income level.
+If there is some EducationLevel, it is usually an influence on Income level.
 
 ## Environment Module
 ![schema-diagram](schema-diagrams/environment.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Environment some describable PollutionType` <br />
+If an Environment exists, it must have some description of its PollutionType (including "clean"/"sterile").
+* `Environment some HealthOutcome` <br />
+If an Environment exists, it may influence the chance of certain HealthOutcomes.
 
 ## HealthcareAccess Module
 ![schema-diagram](schema-diagrams/PharmacyAccess.jpg)
@@ -50,59 +50,65 @@ If there is a HealthOutcome then there is an endingCondition with descriptor con
 ![schema-diagram](schema-diagrams/keyBehaviors.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Action subClassOf KeyBehaviors some description` <br />
+If an Action exists, it must have some description.
+* `Action subClassOf KeyBehaviors some HealthOutcome` <br />
+If an Action exists, it must have some influence on some HealthOutcome.
 
 ## Life Module
 ![schema-diagram](schema-diagrams/LifeModule.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `LifeSpan subClassOf Life some measureOfTime` <br />
+If a LifeSpan exists, its length of Time can be measured.
 
 ## LifeEvent Module
 ![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `LifeEvent subClassOf RecurrentEvent some LifeEvent` <br />
+LifeEvents lead to more LifeEvents until the cycle reaches EventualDeath.
+* `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
+If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
 ## Location Module
 ![schema-diagram](relative/path/to/schema/diagram)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Location some HealthcareAccess` <br />
+If some Location exists, it has some influence on HealthcareAccess services, including distance to Hospitals, Pharmacies, and other Healthcare services.
 
 ## Person
 ![schema-diagram](schema-diagrams/person.jpg)
 
 ### Axioms
-* `IndividualHuman SubclassOf Person max 1 Lifespan` <br />
-natural language description
-* `IndividualHuman subclassOf Person some RacialAttribute` <br />
+* `IndividualHuman subClassOf Person max 1 LifeSpan` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one LifeSpan.
+* `IndividualHuman subClassOf Person some RacialAttribute` <br />
 If an IndividualHuman exists, that IndividualHuman has some RacialAttribute.
-* `IndividualHuman SubclassOf Person max 1 EducationLevel` <br />
+* `IndividualHuman subClassOf Person max 1 EducationLevel` <br />
 If an IndividualHuman exists, that IndividualHuman has at most one generally-quantifiable EducationLevel.
-* `IndividualHuman SubclassOf Person max 1 Income` <br />
-natural language description
+* `IndividualHuman subClassOf Person max 1 Income` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one total quantifiable Income.
+* `IndividualHuman subClassOf Person max 1 alias` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one alias in the data. This alias must be kept anonymized in the model for privacy and security reasons.
+* `IndividualHuman subClassOf Person some Condition` <br />
+If an IndividualHuman exists, that IndividualHuman has some describable Condition (healthy, ill, etc.).
+* `IndividualHuman subClassOf Person some Environment` <br />
+If an IndividualHuman exists, that IndividualHuman must inhabit some describable Environment, and may work in the same or a different Environment.
+* `IndividualHuman subClassOf Person some Population` <br />
+If an IndividualHuman exists, that IndividualHuman is a member of some Population.
+* `IndividualHuman subClassOf Person some Action` <br />
+If an IndividualHuman exists, that IndividualHuman performs some Action.
 
 ## Population Module
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
+* `Population some Location` <br />
+If a Population exists, it must have some describable Location.
+* `PublicWelfare subClassOf Population some Condition` <br />
+If a Population exists, it must have some description of its PublicWelfare.
 
 ## RacialAttribute Module
 ![schema-diagram](schema-diagrams/raceAttribute.jpg)
@@ -117,9 +123,9 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
 ### Axioms
-* `Currency subclassOf Income some Value` <br />
+* `Currency subClassOf Income some Value` <br />
 If Currency is a type of Income, it has some quantifiable monetary Value.
-* `Income subclassOf WealthModule some Healthcare` <br />
+* `Income subClassOf WealthModule some Healthcare` <br />
 If Wealth exists, some level of Healthcare can be afforded.
 * `Income subClassOf WealthModule some EducationLevel.` <br />
 If a Person has some Income, it enables that Person to obtain some EducationLevel.
