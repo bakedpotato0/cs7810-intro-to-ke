@@ -81,7 +81,7 @@ natural language description
 natural language description
 
 ## Person
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/person.jpg)
 
 ### Axioms
 * `IndividualHuman SubclassOf Person max 1 Lifespan` <br />
@@ -94,7 +94,7 @@ If an IndividualHuman exists, that IndividualHuman has at most one generally-qua
 natural language description
 
 ## Population Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
 ### Axioms
 * `axiom in manchester syntax` <br />
@@ -103,7 +103,7 @@ natural language description
 natural language description
 
 ## RacialAttribute Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/raceAttribute.jpg)
 
 ### Axioms
 * `GeneticPredisposition subClassOf RacialAttribute some Condition` <br />
@@ -112,7 +112,7 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
 
 ## Wealth
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/WealthModule.jpg)
 
 ### Axioms
 * `Currency SubclassOf Income some Value` <br />
