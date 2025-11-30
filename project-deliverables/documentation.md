@@ -19,8 +19,8 @@ This deliverable has two components: the documentation file and the presentation
 **Note:** Ensure that each member contributes in explicit commits. Do not squash commits; the `git` history will serve as a record of participation and contribution.
 
 
-# Name of the Knowledge Graph
-**Authors:** authors/contributors alphabetized.
+# Factorizing Determinants of Human Health
+**Authors:** Nicholas Latham, Chris Nodel, Van Quoc Huy Vo
 
 ## Use Case Scenario
 ### Narrative 
