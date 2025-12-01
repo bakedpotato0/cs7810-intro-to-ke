@@ -293,7 +293,7 @@ natural language description
 
 #### Remarks
 * Any remarks re: usage
-
+- modify from here down
 ### Education Module
 **Source Pattern:** name of adapted source pattern
 **Source Data:** name(s) of dataset(s) which populate this module
@@ -373,24 +373,42 @@ If there is a HealthOutcome, then there is an endingCondition with descriptor co
 
 #### Remarks
 * Any remarks re: usage
-- modify from here down
-## KeyBehaviors Module
+
+### KeyBehaviors Module
 ![schema-diagram](schema-diagrams/keyBehaviors.jpg)
 
-### Axioms
+#### Axioms
 * `Action subClassOf KeyBehaviors some description` <br />
 If an Action exists, it must have some description.
 * `Action subClassOf KeyBehaviors some HealthOutcome` <br />
 If an Action exists, it must have some influence on some HealthOutcome.
 
+#### Remarks
+* Any remarks re: usage
+
 ### Life Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/LifeModule.jpg)
 
 #### Axioms
 * `LifeSpan subClassOf Life some measureOfTime` <br />
 If a LifeSpan exists, its length of Time can be measured.
 
+#### Remarks
+* Any remarks re: usage
+
 ### LifeEvent Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
 #### Axioms
@@ -399,6 +417,9 @@ LifeEvents lead to more LifeEvents, until the cycle reaches EventualDeath.
 * `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
 If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
+#### Remarks
+* Any remarks re: usage
+
 ### Location Module
 ![schema-diagram](relative/path/to/schema/diagram)
 
@@ -406,7 +427,16 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 * `Location subClassOf Location Module some HealthcareAccess` <br />
 If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
 
+#### Remarks
+* Any remarks re: usage
+
 ### Person Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/person.jpg)
 
 #### Axioms
@@ -431,7 +461,16 @@ If an IndividualHuman exists, that IndividualHuman performs some Action.
 * `IndividualHuman subClassOf Person some HealthOutcome` <br />
 If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes during their LifeSpan.
 
+#### Remarks
+* Any remarks re: usage
+
 ### Population Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
 #### Axioms
@@ -442,7 +481,16 @@ If a Population exists, it must have some countable number of members.
 * `PublicWelfare subClassOf Population some Condition` <br />
 If a Population exists, it must have some description of its PublicWelfare.
 
+#### Remarks
+* Any remarks re: usage
+
 ### RacialAttribute Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/raceAttribute.jpg)
 
 #### Axioms
@@ -451,7 +499,16 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 * `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome` <br />
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
 
-### Wealth
+#### Remarks
+* Any remarks re: usage
+
+### Wealth Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
 #### Axioms
@@ -461,6 +518,9 @@ If Currency is a type of Income, it has some quantifiable monetary Value.
 If Wealth exists, some level of HealthcareAccess can be afforded.
 * `Income subClassOf WealthModule some EducationLevel.` <br />
 If a Person has some Income, it enables that Person to obtain some EducationLevel.
+
+#### Remarks
+* Any remarks re: usage
 - modify from here up
 
 ## The Overall Knowledge Graph
