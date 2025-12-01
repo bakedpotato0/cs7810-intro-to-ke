@@ -10,6 +10,8 @@
 If there is Education, there is an EducationLevel descriptor.
 * `EducationLevel subClassOf Education some Income.` <br />
 If there is some EducationLevel, it is usually an influence on Income level.
+* `EducationLevel subClassOf Education some Action` <br />
+If there is some EducationLevel, it will inform certain KeyBehavior Actions.
 
 ## Environment Module
 ![schema-diagram](schema-diagrams/environment.jpg)
@@ -39,6 +41,8 @@ If there is an EndingFix, there is some (positive or negative) influence on the 
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
 
 ### Axioms
+* `HealthOutcome subClassOf LifeEvent` <br />
+A HealthOutcome is a type of LifeEvent.
 * `HealthOutcome subClassOf LifeEvent some Cost` <br />
 A HealthOutcome is a type of LifeEvent that has some Cost and influences further LifeEvents.
 * `HealthOutcome subClassOf LifeEvent some startingCondition` <br />

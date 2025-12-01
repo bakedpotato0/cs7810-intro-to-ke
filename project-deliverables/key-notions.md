@@ -1,13 +1,13 @@
 # Key Notions
 
 * There is a racial attribute to health outcomes.
-    * Rationale: African-Americans tend to have higher rates of diabetes and higher blood pressure, while Latinos tend to have lower rates of diabetes, and white people tend to have higher cholesterol and higher rates of skin cancer.  Social and racial factors are often interconnected, and non-white ethnicities tend to have poorer health outcomes.
+    * Rationale: African-Americans tend to have higher rates of diabetes and higher blood pressure, while Latinos tend to have lower rates of diabetes, and white people tend to have higher cholesterol and higher rates of skin cancer. Social and racial factors are often interconnected, and non-white ethnicities tend to have poorer health outcomes.
     * Connected Pattern: Reporting Event
-    * Source Dataset(s): BRFSS annual report, Bridged Race Population Data, Behavioral Health Claims Dashboard, Infectious Disease Dashboard, Mortality
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates
 * There is an interconnected wealth and educational attribute to health outcomes.
     * Rationale: Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
     * Connected Pattern: Reporting Event
-    * Source Dataset(s): BRFSS annual report, Behavioral Health Claims Dashboard, Hospital Registration, Mortality
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Hospital Registration Information, Mortality, Ohio BRFSS Annual Report, Ohio BRFSS Data
 * There are pharmacy-access and hospital-access attributes to health outcomes.
     * Rationale: Taking medication as-prescribed by a healthcare professional improves health. "Self-medication" often diminishes health.
     * Connected Pattern: Reporting Event
@@ -33,9 +33,9 @@
     * Connected pattern: Reporting Event
     * Source Dataset(s): Best Hospitals in Ohio, Hospital Registration Information, National DPP Locator Map, Ohio Pharmacy Access
 * Location is a large determinant of Health Outcomes
-    * Rationale: where a person is located determines a number of social, environmental, and economic factors that affect health outcomes.
+    * Rationale: Where a person is located determines a number of social, environmental, and economic factors that affect health outcomes.
     * Connected Pattern: Reporting Event
-    * Source Dataset(s): 2023 Ohio BRFSS Regions
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 * Environment is a factor that affects Health Outcomes
     * Rationale: Environmental factors like water cleanliness and air quality have a direct impact on health outcomes
     * Connected Pattern: Reporting Event
@@ -43,6 +43,8 @@
 * A person is the smallest unit to be studied, and is used to tie most of the other the modules together.
     * Rationale: A person is a human who is or was alive, and all the experiences and events that happened to them during that period.
     * Connected Pattern: Agent
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Population Data for Calculating Rates, Summary of Infectious Diseases in Ohio, Tobacco Use
 * A population is the next unit above person.
     * Rationale: A population is a number of persons in a given location.
-    * Connected Pattern:
+    * Connected Pattern: Quantity
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates, Tobacco Use

@@ -277,7 +277,7 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ### Education Module
 **Source Pattern:** Reporting Event
-**Source Data:** Ohio BRFSS Annual Report
+**Source Data:** Behavioral Health Claims Dashboard, Hospital Registration Information, Mortality, Ohio BRFSS Annual Report, Ohio BRFSS Data
 
 #### Description
 * Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
@@ -289,6 +289,8 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 If there is Education, there is an EducationLevel descriptor.
 * `EducationLevel subClassOf Education some Income.` <br />
 If there is some EducationLevel, it is usually an influence on Income level.
+* `EducationLevel subClassOf Education some Action` <br />
+If there is some EducationLevel, it will inform certain KeyBehavior Actions.
 
 #### Remarks
 * Any remarks re: usage
@@ -345,6 +347,8 @@ A series of health-related events can end a person’s life, or prolong it. Some
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
 
 #### Axioms
+* `HealthOutcome subClassOf LifeEvent` <br />
+A HealthOutcome is a type of LifeEvent.
 * `HealthOutcome subClassOf LifeEvent some Cost` <br />
 A HealthOutcome is a type of LifeEvent that has some Cost and influences further LifeEvents.
 * `HealthOutcome subClassOf LifeEvent some startingCondition` <br />
@@ -357,7 +361,7 @@ If there is a HealthOutcome, then there is an endingCondition with descriptor co
 
 ### KeyBehaviors Module
 **Source Pattern:** Reporting Event
-**Source Data:** eCigarette Use, Ohio BRFSS Annual Report, Ohio BRFSS Data, Tobacco Use
+**Source Data:** Behavioral Health Claims Dashboard, eCigarette Use, Ohio BRFSS Annual Report, Ohio BRFSS Data, Tobacco Use
 
 #### Description
 * Behaviors which are known risk factors can be tracked.
@@ -406,8 +410,14 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 
 #### Remarks
 * Any remarks re: usage
-- modify from here down
+
 ### Location Module
+**Source Pattern:** Reporting Event
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
+
+#### Description
+Where a person is located determines a number of social, environmental, and economic factors that affect health outcomes.
+
 ![schema-diagram](schema-diagrams/location.jpg)
 
 #### Axioms
@@ -418,11 +428,11 @@ If some Location exists, it has some influence on HealthcareAccess services, inc
 * Any remarks re: usage
 
 ### Person Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Agent
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates, Tobacco Use
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+A person is a human who is or was alive, and all the experiences and events that happened to them during that period.
 
 ![schema-diagram](schema-diagrams/person.jpg)
 
@@ -452,11 +462,11 @@ If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes durin
 * Any remarks re: usage
 
 ### Population Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Quantity
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates, Tobacco Use
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+A population is a number of persons in a given location.
 
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
@@ -472,11 +482,11 @@ If a Population exists, it must have some description of its PublicWelfare.
 * Any remarks re: usage
 
 ### RacialAttribute Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+African-Americans tend to have higher rates of diabetes and higher blood pressure, while Latinos tend to have lower rates of diabetes, and white people tend to have higher cholesterol and higher rates of skin cancer. Social and racial factors are often interconnected, and non-white ethnicities tend to have poorer health outcomes.
 
 ![schema-diagram](schema-diagrams/raceAttribute.jpg)
 
@@ -490,11 +500,11 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 * Any remarks re: usage
 
 ### Wealth Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Behavioral Health Claims Dashboard, Hospital Registration Information, Mortality, Ohio BRFSS Annual Report, Ohio BRFSS Data
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
 
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
@@ -508,7 +518,6 @@ If a Person has some Income, it enables that Person to obtain some EducationLeve
 
 #### Remarks
 * Any remarks re: usage
-- modify from here up
 
 ## The Overall Knowledge Graph
 ### Namespaces
@@ -516,18 +525,52 @@ If a Person has some Income, it enables that Person to obtain some EducationLeve
 * prefix: namespace
 
 ### Schema Diagram
-![schema-diagram](./schema-diagram.png)
+![schema-diagram](schema-diagramsoverallSchema(1).png)
 
 ### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
-
-### Usage
-Adapted from `validation.md`, i.e., the competency questions + SPARQL queries.
+* `EducationLevel subClassOf Education some Income.` <br />
+If there is some EducationLevel, it is usually an influence on Income level.
+* `EducationLevel subClassOf Education some Action` <br />
+If there is some EducationLevel, it will inform certain KeyBehavior Actions.
+* `Environment subClassOf Environment Module some HealthOutcome` <br />
+If an Environment exists, it may influence the chance of certain HealthOutcomes.
+* `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
+If there is an EndingFix, there is some (positive or negative) influence on the chance of a HealthOutcome.
+* `HealthOutcome subClassOf LifeEvent` <br />
+A HealthOutcome is a type of LifeEvent.
+* `Action subClassOf KeyBehaviors some HealthOutcome` <br />
+If an Action exists, it must have some influence on some HealthOutcome.
+* `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
+If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
+* `Location subClassOf Location Module some HealthcareAccess` <br />
+If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
+* `IndividualHuman subClassOf Person max 1 LifeSpan` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one LifeSpan.
+* `IndividualHuman subClassOf Person some RacialAttribute` <br />
+If an IndividualHuman exists, that IndividualHuman has some RacialAttribute.
+* `IndividualHuman subClassOf Person max 1 EducationLevel` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one generally-quantifiable EducationLevel.
+* `IndividualHuman subClassOf Person max 1 Income` <br />
+If an IndividualHuman exists, that IndividualHuman has at most one total quantifiable Income.
+* `IndividualHuman subClassOf Person some Environment` <br />
+If an IndividualHuman exists, that IndividualHuman must inhabit some describable Environment, and may work a job in the same or a different Environment.
+* `IndividualHuman subClassOf Person some Population` <br />
+If an IndividualHuman exists, that IndividualHuman is a member of some Population.
+* `IndividualHuman subClassOf Person some Action` <br />
+If an IndividualHuman exists, that IndividualHuman performs some Action.
+* `IndividualHuman subClassOf Person some HealthOutcome` <br />
+If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes during their LifeSpan.
+* `Population subClassOf Population Module some Location` <br />
+If a Population exists, it must have some describable Location.
+* `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome` <br />
+If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
+* `Income subClassOf WealthModule some HealthcareAccess` <br />
+If Wealth exists, some level of HealthcareAccess can be afforded.
+* `Income subClassOf WealthModule some EducationLevel.` <br />
+If a Person has some Income, it enables that Person to obtain some EducationLevel.
 
 ## Retrospective
 * In this section, put 1-2 comments per group member
 * Include comments re: what went well in this course, what could be changed
 * Provide an overall rating for the course: fun/!fun, useful/!useful, etc.
+* Getting things started was somewhat difficult, especially because a lot of the datasets we wanted were difficult to get. Also, the whole process is fairly rigorous. I would say the class was more "interesting" than "fun," and what we've learned will certainly be useful for future work.
