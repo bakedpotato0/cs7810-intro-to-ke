@@ -525,7 +525,7 @@ If a Person has some Income, it enables that Person to obtain some EducationLeve
 * prefix: namespace
 
 ### Schema Diagram
-![schema-diagram](schema-diagramsoverallSchema(1).png)
+![schema-diagram](schema-diagrams/overallSchema(1).png)
 
 ### Axioms
 * `EducationLevel subClassOf Education some Income.` <br />
