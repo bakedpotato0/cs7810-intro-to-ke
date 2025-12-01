@@ -72,7 +72,7 @@ LifeEvents lead to more LifeEvents, until the cycle reaches EventualDeath.
 If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
 ## Location Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/location.jpg)
 
 ### Axioms
 * `Location subClassOf Location Module some HealthcareAccess` <br />

@@ -14,24 +14,24 @@
     * Source Dataset(s): Respiratory Dashboard, Infectious Disease Dashboard, Behavioral Health Claims Dashboard, Hospital Registration, Mortality
 * Health outcomes are events that have a direct impact on the quality and longevity of a person’s life, and stem from a multitude of factors.
     * Rationale: A series of health-related events can end a person’s life, or prolong it.
-    * Connected Pattern: Reporting Event
-    * Source Dataset(s): Mortality
+    * Connected Pattern: Recurring Event
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 * Negative health outcomes range in severity.
     * Rationale: Some outcomes can be treated while others cannot.
-    * Connected Pattern: Reporting Event
-    * Source Dataset(s): Hospital Registration, Mortality, Infant Mortality
+    * Connected Pattern: Recurring Event
+    * Source Dataset(s): Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 * Positive health outcomes improve longevity.
     * Rationale: Discharge from a hospital to home means that a patient has survived a health event.
-    * Connected Pattern: Reporting Event
+    * Connected Pattern: Recurring Event
     * Source Dataset(s): Hospital Registration, Best Hospitals in Ohio, Cancer Data and Statistics
 * Key behaviors (i.e. Smoking, Vaccination, alcohol, exercises) affect health outcome
-    * Rationale: Behaviors are key risk factors can be tracked
+    * Rationale: Behaviors which are known risk factors can be tracked.
     * Connected Pattern: Reporting Event
-    * Source Dataset(s): Report section Smoking, Marijuana use, E-cigarette use, No Exercise
+    * Source Dataset(s): eCigarette Use, Ohio BRFSS Annual Report, Ohio BRFSS Data, Tobacco Use
 * Healthcare Access Impact
-    * Rationale: accessibility to pharmacies and hospitals significantly impacts health outcomes.
+    * Rationale: Accessibility to pharmacies and hospitals significantly impacts health outcomes.
     * Connected pattern: Reporting Event
-    * Source Dataset(s):
+    * Source Dataset(s): Best Hospitals in Ohio, Hospital Registration Information, National DPP Locator Map, Ohio Pharmacy Access
 * Location is a large determinant of Health Outcomes
     * Rationale: where a person is located determines a number of social, environmental, and economic factors that affect health outcomes.
     * Connected Pattern: Reporting Event
@@ -39,10 +39,10 @@
 * Environment is a factor that affects Health Outcomes
     * Rationale: Environmental factors like water cleanliness and air quality have a direct impact on health outcomes
     * Connected Pattern: Reporting Event
-    * Source Dataset(s):
-* A person is a human who is or was alive, and all the experiences and events that happened to them during that period.
-    * Rationale:
+    * Source Dataset(s): Blood Lead Levels Public
+* A person is the smallest unit to be studied, and is used to tie most of the other the modules together.
+    * Rationale: A person is a human who is or was alive, and all the experiences and events that happened to them during that period.
     * Connected Pattern: Agent
-* A population is a number of persons in a given location.
-    * Rationale:
+* A population is the next unit above person.
+    * Rationale: A population is a number of persons in a given location.
     * Connected Pattern:

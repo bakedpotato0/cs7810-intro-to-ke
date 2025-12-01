@@ -224,7 +224,6 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * education level
    * percent affected
    * region
-   *
 * [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
    * condition
    * ethnicity
@@ -233,7 +232,6 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * education level
    * percent affected
    * region
-   *
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
    * name
    * location
@@ -276,30 +274,13 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Modules
 <!-- There should be one module section per module (essentially per key-notion) -->
-### Module X
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
 
-#### Description
-Description Text (adapted from the rationale in `key-notions.md`).
-
-![schema-diagram](./schema-diagram.png)
-
-#### Axioms
-* `axiom in manchester syntax` <br />
-natural language description
-* `axiom in manchester syntax` <br />
-natural language description
-
-#### Remarks
-* Any remarks re: usage
-- modify from here down
 ### Education Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Ohio BRFSS Annual Report
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+* Higher education and wealth feed into each other, and higher wealth increases access to healthcare, including mental healthcare.  Higher education leads to avoidance of some behavioral risks.
 
 ![schema-diagram](schema-diagrams/education.jpg)
 
@@ -313,11 +294,11 @@ If there is some EducationLevel, it is usually an influence on Income level.
 * Any remarks re: usage
 
 ### Environment Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Blood Lead Levels Public
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+Environmental factors such as water cleanliness and air quality have a direct impact on health outcomes.
 
 ![schema-diagram](schema-diagrams/environment.jpg)
 
@@ -331,11 +312,11 @@ If an Environment exists, it may influence the chance of certain HealthOutcomes.
 * Any remarks re: usage
 
 ### HealthcareAccess Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Best Hospitals in Ohio, Hospital Registration Information, National DPP Locator Map, Ohio Pharmacy Access
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+Accessibility to pharmacies and hospitals significantly impacts health outcomes. Taking medication as-prescribed by a healthcare professional improves health. "Self-medication" often diminishes health.
 
 ![schema-diagram](schema-diagrams/Healthcare%20Access.jpg)
 
@@ -355,11 +336,11 @@ If there is an EndingFix, there is some (positive or negative) influence on the 
 * Any remarks re: usage
 
 ### HealthOutcomes Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Recurring Event
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+A series of health-related events can end a person’s life, or prolong it. Some outcomes can be treated while others cannot. Discharge from a hospital to home means that a patient has survived a health event.
 
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
 
@@ -375,6 +356,12 @@ If there is a HealthOutcome, then there is an endingCondition with descriptor co
 * Any remarks re: usage
 
 ### KeyBehaviors Module
+**Source Pattern:** Reporting Event
+**Source Data:** eCigarette Use, Ohio BRFSS Annual Report, Ohio BRFSS Data, Tobacco Use
+
+#### Description
+* Behaviors which are known risk factors can be tracked.
+
 ![schema-diagram](schema-diagrams/keyBehaviors.jpg)
 
 #### Axioms
@@ -387,11 +374,11 @@ If an Action exists, it must have some influence on some HealthOutcome.
 * Any remarks re: usage
 
 ### Life Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Reporting Event
+**Source Data:** Infant Mortality Scorecard, Mortality
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+A series of health-related events can end a person’s life, or prolong it.
 
 ![schema-diagram](schema-diagrams/LifeModule.jpg)
 
@@ -403,11 +390,11 @@ If a LifeSpan exists, its length of Time can be measured.
 * Any remarks re: usage
 
 ### LifeEvent Module
-**Source Pattern:** name of adapted source pattern
-**Source Data:** name(s) of dataset(s) which populate this module
+**Source Pattern:** Recurring Event
+**Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 
 #### Description
-Description Text (adapted from the rationale in `key-notions.md`).
+A series of health-related events can end a person’s life, or prolong it.
 
 ![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
@@ -419,9 +406,9 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 
 #### Remarks
 * Any remarks re: usage
-
+- modify from here down
 ### Location Module
-![schema-diagram](relative/path/to/schema/diagram)
+![schema-diagram](schema-diagrams/location.jpg)
 
 #### Axioms
 * `Location subClassOf Location Module some HealthcareAccess` <br />

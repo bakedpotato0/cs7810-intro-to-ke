@@ -201,7 +201,6 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * education level
    * percent affected
    * region
-   *
 * [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
    * condition
    * ethnicity
@@ -210,7 +209,6 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
    * education level
    * percent affected
    * region
-   *
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
    * name
    * location
