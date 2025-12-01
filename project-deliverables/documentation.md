@@ -12,7 +12,7 @@ This deliverable has two components: the documentation file and the presentation
     * Consider using [marp](https://marp.app/).
 3. Add an additional section at the end called "Retrospective".
     * In this section, put 1-2 comments per group member
-    * Include comments re: what went will in this course, what could be changed
+    * Include comments re: what went well in this course, what could be changed
     * Provide an overall rating for the course: fun/!fun, useful/!useful, etc.
 4. Upload a PDF rendering of the presentation to the `deliverables` directory.
 
@@ -294,29 +294,52 @@ natural language description
 #### Remarks
 * Any remarks re: usage
 
-- modify from here down
-## Education Module
+### Education Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/education.jpg)
 
-### Axioms
+#### Axioms
 * `EducationLevel subClassOf Education` <br />
 If there is Education, there is an EducationLevel descriptor.
 * `EducationLevel subClassOf Education some Income.` <br />
 If there is some EducationLevel, it is usually an influence on Income level.
 
-## Environment Module
+#### Remarks
+* Any remarks re: usage
+
+### Environment Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/environment.jpg)
 
-### Axioms
+#### Axioms
 * `Environment subClassOf Environment Module some PollutionType` <br />
 If an Environment exists, it must have some description of its PollutionType (including "clean"/"sterile").
 * `Environment subClassOf Environment Module some HealthOutcome` <br />
 If an Environment exists, it may influence the chance of certain HealthOutcomes.
 
-## HealthcareAccess Module
-![schema-diagram](schema-diagrams/PharmacyAccess.jpg)
+#### Remarks
+* Any remarks re: usage
 
-### Axioms
+### HealthcareAccess Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
+![schema-diagram](schema-diagrams/Healthcare%20Access.jpg)
+
+#### Axioms
 * `HospitalAccess subClassOf HealthcareAccess` <br />
 HospitalAccess is a component of HealthcareAccess.
 * `PharmacyAccess subClassOf HealthcareAccess` <br />
@@ -328,10 +351,19 @@ If there is HealthcareAccess, then there is some level of Healthcare service acc
 * `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
 If there is an EndingFix, there is some (positive or negative) influence on the chance of a HealthOutcome.
 
-## HealthOutcomes Module
+#### Remarks
+* Any remarks re: usage
+
+### HealthOutcomes Module
+**Source Pattern:** name of adapted source pattern
+**Source Data:** name(s) of dataset(s) which populate this module
+
+#### Description
+Description Text (adapted from the rationale in `key-notions.md`).
+
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
 
-### Axioms
+#### Axioms
 * `HealthOutcome subClassOf LifeEvent some Cost` <br />
 A HealthOutcome is a type of LifeEvent that has some Cost and influences further LifeEvents.
 * `HealthOutcome subClassOf LifeEvent some startingCondition` <br />
@@ -339,6 +371,9 @@ If there is a HealthOutcome, then there is a startingCondition with descriptor c
 * `HealthOutcome subClassOf LifeEvent some endingCondition` <br />
 If there is a HealthOutcome, then there is an endingCondition with descriptor conditionDescription.
 
+#### Remarks
+* Any remarks re: usage
+- modify from here down
 ## KeyBehaviors Module
 ![schema-diagram](schema-diagrams/keyBehaviors.jpg)
 
@@ -348,33 +383,33 @@ If an Action exists, it must have some description.
 * `Action subClassOf KeyBehaviors some HealthOutcome` <br />
 If an Action exists, it must have some influence on some HealthOutcome.
 
-## Life Module
+### Life Module
 ![schema-diagram](schema-diagrams/LifeModule.jpg)
 
-### Axioms
+#### Axioms
 * `LifeSpan subClassOf Life some measureOfTime` <br />
 If a LifeSpan exists, its length of Time can be measured.
 
-## LifeEvent Module
+### LifeEvent Module
 ![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
-### Axioms
+#### Axioms
 * `LifeEvent subClassOf RecurrentEvent some LifeEvent` <br />
 LifeEvents lead to more LifeEvents, until the cycle reaches EventualDeath.
 * `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
 If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
-## Location Module
+### Location Module
 ![schema-diagram](relative/path/to/schema/diagram)
 
-### Axioms
+#### Axioms
 * `Location subClassOf Location Module some HealthcareAccess` <br />
 If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
 
-## Person
+### Person Module
 ![schema-diagram](schema-diagrams/person.jpg)
 
-### Axioms
+#### Axioms
 * `IndividualHuman subClassOf Person max 1 LifeSpan` <br />
 If an IndividualHuman exists, that IndividualHuman has at most one LifeSpan.
 * `IndividualHuman subClassOf Person some RacialAttribute` <br />
@@ -396,10 +431,10 @@ If an IndividualHuman exists, that IndividualHuman performs some Action.
 * `IndividualHuman subClassOf Person some HealthOutcome` <br />
 If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes during their LifeSpan.
 
-## Population Module
+### Population Module
 ![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
-### Axioms
+#### Axioms
 * `Population subClassOf Population Module some Location` <br />
 If a Population exists, it must have some describable Location.
 * `Population subClassOf Population Module some populationCount` <br />
@@ -407,19 +442,19 @@ If a Population exists, it must have some countable number of members.
 * `PublicWelfare subClassOf Population some Condition` <br />
 If a Population exists, it must have some description of its PublicWelfare.
 
-## RacialAttribute Module
+### RacialAttribute Module
 ![schema-diagram](schema-diagrams/raceAttribute.jpg)
 
-### Axioms
+#### Axioms
 * `GeneticPredisposition subClassOf RacialAttribute some Condition` <br />
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding medical Conditons that are more likely.
 * `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome` <br />
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
 
-## Wealth
+### Wealth
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
-### Axioms
+#### Axioms
 * `Currency subClassOf Income some Value` <br />
 If Currency is a type of Income, it has some quantifiable monetary Value.
 * `Income subClassOf WealthModule some HealthcareAccess` <br />
@@ -444,3 +479,8 @@ natural language description
 
 ### Usage
 Adapted from `validation.md`, i.e., the competency questions + SPARQL queries.
+
+## Retrospective
+* In this section, put 1-2 comments per group member
+* Include comments re: what went well in this course, what could be changed
+* Provide an overall rating for the course: fun/!fun, useful/!useful, etc.
