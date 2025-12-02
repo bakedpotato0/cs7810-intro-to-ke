@@ -273,7 +273,7 @@ More datasets:
 ---
 
 # Retrospective — Comments
-**Van Quoc Huy Vo (you)**  
+**Van Quoc Huy Vo**  
 - Contributions: integrated datasets list, module descriptions, schema diagrams and axioms; coordinated the overall narrative.  
 - What went well: strong integration of public datasets and clear competency questions.  
 - What could be improved: streamline data acquisition early; standardize property naming and units across datasets.
