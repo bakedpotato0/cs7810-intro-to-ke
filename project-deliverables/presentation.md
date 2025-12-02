@@ -266,18 +266,27 @@ More datasets:
 **Nicholas Latham**  
 - Contributions: Drafted use case sections, key notions, module and overall diagrams, and axioms; extracted dataset metadata tag lists.
 - What went well: Once we got going, the development process seemed mostly straightforward.
-- What could be improved: Some of the datasets we chose have restricted access so we had to glean whatever we could from public reports, and many of others were still difficult to download.
-
-**Chris Nodel**  
+- What could be improved: Some of the datasets we chose have restricted access, so we had to glean whatever we could from public reports, and many of others were still difficult to download.
 
 ---
 
 # Retrospective — Comments
-**Van Quoc Huy Vo (you)**  
+**Chris Nodel**  
+- Contributions:
+- What went well:
+- What could be improved:
+---
+
+# Retrospective — Comments
+**Van Quoc Huy Vo**  
 - Contributions: integrated datasets list, module descriptions, schema diagrams and axioms; coordinated the overall narrative.  
 - What went well: strong integration of public datasets and clear competency questions.  
 - What could be improved: streamline data acquisition early; standardize property naming and units across datasets.
 
+
+---
+
+# Retrospective — Comments
 **Course Rating (group summary):**  
 - Useful: ✅  
 - Fun: somewhat (interesting but rigorous)  
