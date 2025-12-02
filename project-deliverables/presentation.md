@@ -38,12 +38,17 @@ References: NIEHS (air pollution), BMJ Oncology (air pollution & cancer), Nation
 ---
 
 # Competency Questions
+
 - How do lead levels affect life expectancy?  
   *(Blood Lead Levels ↔ Mortality)*
 - Is RSV more dangerous to adults than infants?  
   *(Respiratory dashboard ↔ Mortality ↔ Infant mortality)*
 - Is secondhand smoke more dangerous than vaping?  
   *(eCigarette Use ↔ Tobacco Use ↔ Mortality)*
+
+---
+
+# Competency Questions
 - Does pharmacy access improve mental health outcomes?  
   *(Pharmacy Access ↔ Behavioral Health Claims)*
 - Do diabetes prevention programs decrease diabetes-related hospitalizations?  
@@ -83,6 +88,9 @@ More datasets:
 - `EducationLevel subClassOf Education some Income`
 - `EducationLevel subClassOf Education some Action`
 
+---
+
+# Module: Education
 ![schema-diagram](schema-diagrams/education.jpg)
 
 ---
@@ -97,6 +105,9 @@ More datasets:
 - `Environment subClassOf ... some PollutionType`
 - `Environment subClassOf ... some HealthOutcome`
 
+---
+
+# Module: Environment
 ![schema-diagram](schema-diagrams/environment.jpg)
 
 ---
@@ -112,6 +123,9 @@ More datasets:
 - `PharmacyAccess subClassOf HealthcareAccess`
 - `EndingFix subClassOf HealthcareAccess Module some HealthOutcome`
 
+---
+
+# Module: Healthcare Access
 ![schema-diagram](schema-diagrams/Healthcare%20Access.jpg)
 
 ---
@@ -127,6 +141,9 @@ More datasets:
 - `HealthOutcome subClassOf LifeEvent some Cost`
 - `HealthOutcome subClassOf LifeEvent some startingCondition`
 
+---
+
+# Module: HealthOutcomes
 ![schema-diagram](schema-diagrams/HealthOutcomeModule.jpg)
 
 ---
@@ -155,6 +172,9 @@ More datasets:
 - `LifeSpan subClassOf Life some measureOfTime`
 - `EventualDeath subClassOf LifeEvent max 1 LifeSpan`
 
+---
+
+# Module: Life & LifeEvent
 ![schema-diagram](schema-diagrams/LifeModule.jpg)
 ![schema-diagram](schema-diagrams/lifeEvent.jpg)
 
@@ -170,8 +190,10 @@ More datasets:
 - `Population subClassOf Population Module some Location`
 - `Location subClassOf Location Module some HealthcareAccess`
 
-![schema-diagram](schema-diagrams/location.jpg)
-![schema-diagram](schema-diagrams/PopulationModule.jpg)
+---
+
+# Module: Location & Population
+![schema-diagram](schema-diagrams/location.jpg)![schema-diagram](schema-diagrams/PopulationModule.jpg)
 
 ---
 
@@ -186,6 +208,9 @@ More datasets:
 - `IndividualHuman subClassOf Person some RacialAttribute`
 - `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome`
 
+---
+
+# Module: Person & RacialAttribute
 ![schema-diagram](schema-diagrams/person.jpg)
 ![schema-diagram](schema-diagrams/raceAttribute.jpg)
 
@@ -202,6 +227,10 @@ More datasets:
 - `Income subClassOf WealthModule some HealthcareAccess`
 - `Income subClassOf WealthModule some EducationLevel`
 
+
+---
+
+# Module: Wealth
 ![schema-diagram](schema-diagrams/WealthModule.jpg)
 
 ---
@@ -214,6 +243,9 @@ More datasets:
 - `Population` — aggregates → `Person` and provides rates used to normalize outcomes  
 - `Environment` — influences → `HealthOutcome` (direct exposure links)  
 - `HealthcareAccess` — mediates → `HealthOutcome` (access, capacity)
+
+
+---
 
 ![schema-diagram](schema-diagrams/overallSchema(1).png)
 
