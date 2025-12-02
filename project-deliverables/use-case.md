@@ -33,7 +33,7 @@ Our ultimate goal is to create a scalable knowledge graph which can be used to i
 
 
 ## Competency Questions
-*How do lead levels affect life expectancy?<br>
+* How do lead levels affect life expectancy?<br>
 Bridges Datasets: Blood Lead Levels, Mortality
 * Is RSV more dangerous to adults than infants?<br>
 Bridges Datasets: ODH Respiratory Dashboard, Mortality, Infant Mortality

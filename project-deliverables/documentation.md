@@ -56,7 +56,7 @@ We are also looking to expand our dataset collection with sets from the National
 Our ultimate goal is to create a scalable knowledge graph which can be used to inform policymakers, healthcare providers, community organizations, and the general public. As more data is added, a more nuanced understanding of public health can be achieved.
 
 ### Competency Questions
-*How do lead levels affect life expectancy?<br>
+* How do lead levels affect life expectancy?<br>
 Bridges Datasets: Blood Lead Levels, Mortality
 * Is RSV more dangerous to adults than infants?<br>
 Bridges Datasets: ODH Respiratory Dashboard, Mortality, Infant Mortality
@@ -573,4 +573,20 @@ If a Person has some Income, it enables that Person to obtain some EducationLeve
 * In this section, put 1-2 comments per group member
 * Include comments re: what went well in this course, what could be changed
 * Provide an overall rating for the course: fun/!fun, useful/!useful, etc.
-* Getting things started was somewhat difficult, especially because a lot of the datasets we wanted were difficult to get. Also, the whole process is fairly rigorous. I would say the class was more "interesting" than "fun," and what we've learned will certainly be useful for future work.
+**Nicholas Latham**  
+- Contributions: Drafted use case sections, key notions, module and overall diagrams, and axioms; extracted dataset metadata tag lists.
+- What went well: Once we got going, the development process seemed mostly straightforward.
+- What could be improved: Some of the datasets we chose have restricted access so we had to glean whatever we could from public reports, and many of others were still difficult to download.
+
+**Chris Nodel**  
+
+
+**Van Quoc Huy Vo (you)**  
+- Contributions: integrated datasets list, module descriptions, schema diagrams and axioms; coordinated the overall narrative.  
+- What went well: strong integration of public datasets and clear competency questions.  
+- What could be improved: streamline data acquisition early; standardize property naming and units across datasets.
+
+**Course Rating (group summary):**  
+- Useful: ✅  
+- Fun: somewhat (interesting but rigorous)  
+- Overall: Recommended for practical exposure to knowledge graphs and public-health data integration.
