@@ -253,9 +253,9 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Modules
 <!-- There should be one module section per module (essentially per key-notion) -->
-
 ### Education Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Hospital Registration Information, Mortality, Ohio BRFSS Annual Report, Ohio BRFSS Data
 
 #### Description
@@ -276,6 +276,7 @@ If there is some EducationLevel, it will inform certain KeyBehavior Actions.
 
 ### Environment Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Blood Lead Levels Public
 
 #### Description
@@ -294,6 +295,7 @@ If an Environment exists, it may influence the chance of certain HealthOutcomes.
 
 ### HealthcareAccess Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Best Hospitals in Ohio, Hospital Registration Information, National DPP Locator Map, Ohio Pharmacy Access
 
 #### Description
@@ -318,6 +320,7 @@ If there is an EndingFix, there is some (positive or negative) influence on the 
 
 ### HealthOutcomes Module
 **Source Pattern:** Recurring Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 
 #### Description
@@ -340,6 +343,7 @@ If there is a HealthOutcome, then there is an endingCondition with descriptor co
 
 ### KeyBehaviors Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Behavioral Health Claims Dashboard, eCigarette Use, Ohio BRFSS Annual Report, Ohio BRFSS Data, Tobacco Use
 
 #### Description
@@ -358,6 +362,7 @@ If an Action exists, it must have some influence on some HealthOutcome.
 
 ### Life Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Infant Mortality Scorecard, Mortality
 
 #### Description
@@ -374,6 +379,7 @@ If a LifeSpan exists, its length of Time can be measured.
 
 ### LifeEvent Module
 **Source Pattern:** Recurring Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 
 #### Description
@@ -392,6 +398,7 @@ If LifeEvents occur, there will be an EventualDeath which is the ending point of
 
 ### Location Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio
 
 #### Description
@@ -408,6 +415,7 @@ If some Location exists, it has some influence on HealthcareAccess services, inc
 
 ### Person Module
 **Source Pattern:** Agent
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates, Tobacco Use
 
 #### Description
@@ -442,6 +450,7 @@ If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes durin
 
 ### Population Module
 **Source Pattern:** Quantity
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, eCigarette Use, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates, Tobacco Use
 
 #### Description
@@ -462,6 +471,7 @@ If a Population exists, it must have some description of its PublicWelfare.
 
 ### RacialAttribute Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Cancer and Statistics, Hospital Registration Information, Infant Mortality Scorecard, Mortality, National DPP Locator Map, ODH Respiratory Dashboard, Ohio BRFSS Annual Report, Ohio BRFSS Data, Summary of Infectious Diseases in Ohio, Population Data for Calculating Rates
 
 #### Description
@@ -480,6 +490,7 @@ If a RacialAttribute includes a given GeneticPredispostion, there are correspond
 
 ### Wealth Module
 **Source Pattern:** Reporting Event
+
 **Source Data:** Behavioral Health Claims Dashboard, Hospital Registration Information, Mortality, Ohio BRFSS Annual Report, Ohio BRFSS Data
 
 #### Description
@@ -500,8 +511,7 @@ If a Person has some Income, it enables that Person to obtain some EducationLeve
 
 ## The Overall Knowledge Graph
 ### Namespaces
-* prefix: namespace
-* prefix: namespace
+* prefix: (prefixes to be defined in the repo/OWL)
 
 ### Schema Diagram
 ![schema-diagram](schema-diagrams/overallSchema(1).png)
@@ -549,23 +559,20 @@ If Wealth exists, some level of HealthcareAccess can be afforded.
 If a Person has some Income, it enables that Person to obtain some EducationLevel.
 
 ## Retrospective
-* In this section, put 1-2 comments per group member
-* Include comments re: what went well in this course, what could be changed
-* Provide an overall rating for the course: fun/!fun, useful/!useful, etc.
 **Nicholas Latham**  
-- Contributions: Drafted use case sections, key notions, module and overall diagrams, and axioms; extracted dataset metadata tag lists.
+- Contributions: Drafted Use Case sections, Key Notions, Module and Overall Schema Diagrams, and Axioms; extracted dataset metadata tag lists.
 - What went well: Once we got going, the development process seemed mostly straightforward.
-- What could be improved: Some of the datasets we chose have restricted access, so we had to glean whatever we could from public reports, and many of others were still difficult to download.
+- What could be improved: Some of the datasets we chose have restricted access, so we had to glean whatever we could from public reports, and many of the others were still difficult to download.
 
-**Chris Nodel**
-- Contributions:
-- What went well:
-- What could be improved:
+**Chris Nodel**  
+- Contributions: contributed to Use Case, Key Notions, Axioms, Schema Diagrams, Modules; generally in charge of double checking and oversight 
+- What went well: The workflow was generally rather smooth and communication was well coordinated.
+- What could be improved: The data aquisition proved the most difficult part of the process due to inaccessability. 
 
-**Van Quoc Huy Vo (you)**  
-- Contributions: integrated datasets list, module descriptions, schema diagrams and axioms; coordinated the overall narrative.  
-- What went well: strong integration of public datasets and clear competency questions.  
-- What could be improved: streamline data acquisition early; standardize property naming and units across datasets.
+**Van Quoc Huy Vo**  
+- Contributions: integrated datasets list, Module descriptions, Schema Diagrams and Axioms; coordinated the overall narrative.  
+- What went well: Strong integration of public datasets and clear competency questions.  
+- What could be improved: Streamline data acquisition early; standardize property naming and units across datasets.
 
 **Course Rating (group summary):**  
 - Useful: ✅  

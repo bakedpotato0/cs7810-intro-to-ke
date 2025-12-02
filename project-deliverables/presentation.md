@@ -264,24 +264,24 @@ More datasets:
 
 # Retrospective — Comments
 **Nicholas Latham**  
-- Contributions: Drafted use case sections, key notions, module and overall diagrams, and axioms; extracted dataset metadata tag lists.
+- Contributions: Drafted Use Case sections, Key Notions, Module and Overall Schema Diagrams, and Axioms; extracted dataset metadata tag lists.
 - What went well: Once we got going, the development process seemed mostly straightforward.
-- What could be improved: Some of the datasets we chose have restricted access, so we had to glean whatever we could from public reports, and many of others were still difficult to download.
+- What could be improved: Some of the datasets we chose have restricted access, so we had to glean whatever we could from public reports, and many of the others were still difficult to download.
 
 ---
 
 # Retrospective — Comments
 **Chris Nodel**  
-- Contributions: contributor to, use case key notions, axioms, schema diagram, modules; generally in charge of double checking and oversight 
-- What went well: the workflow was generally rather smooth and communication was well coordinated
-- What could be improved: the data aquisition proved the most difficult part of the process due to inaccessability. 
+- Contributions: contributed to Use Case, Key Notions, Axioms, Schema Diagrams, Modules; generally in charge of double checking and oversight 
+- What went well: The workflow was generally rather smooth and communication was well coordinated.
+- What could be improved: The data aquisition proved the most difficult part of the process due to inaccessability. 
 ---
 
 # Retrospective — Comments
 **Van Quoc Huy Vo**  
-- Contributions: integrated datasets list, module descriptions, schema diagrams and axioms; coordinated the overall narrative.  
-- What went well: strong integration of public datasets and clear competency questions.  
-- What could be improved: streamline data acquisition early; standardize property naming and units across datasets.
+- Contributions: integrated datasets list, Module descriptions, Schema Diagrams and Axioms; coordinated the overall narrative.  
+- What went well: Strong integration of public datasets and clear competency questions.  
+- What could be improved: Streamline data acquisition early; standardize property naming and units across datasets.
 
 
 ---
