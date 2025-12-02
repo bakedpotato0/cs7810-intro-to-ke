@@ -232,7 +232,9 @@ More datasets:
 
 # Retrospective — Comments
 **Nicholas Latham**  
-
+- Contributions: Drafted use case sections, key notions, module and overall diagrams, and axioms; extracted dataset metadata tag lists.
+- What went well: Once we got going, the development process seemed mostly straightforward.
+- What could be improved: Some of the datasets we chose have restricted access so we had to glean whatever we could from public reports, and many of others were still difficult to download.
 
 **Chris Nodel**  
 
