@@ -33,7 +33,7 @@ Our ultimate goal is to create a scalable knowledge graph which can be used to i
 
 
 ## Competency Questions
-*How do lead levels affect life expectancy?<br>
+* How do lead levels affect life expectancy?<br>
 Bridges Datasets: Blood Lead Levels, Mortality
 * Is RSV more dangerous to adults than infants?<br>
 Bridges Datasets: ODH Respiratory Dashboard, Mortality, Infant Mortality
@@ -56,48 +56,192 @@ Bridges Datasets: Behavioral Health Claims, BRFSS Annual Report
 
 ## Potential Datasets
 * [Behavioral Health Claims Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/mental-health-and-addiction-services-claims-dashboard)
-  * 
+   * age group
+   * gender
+   * race
+   * ethnicity
+   * current county of residence
+   * current county of residence type
+   * current board name
+   * hospital catchment
+   * primary diagnosis type
+* [Best Hospitals in Ohio](https://health.usnews.com/best-hospitals/area/oh)
+   * National Ohio Rankings
+   * Specialties
+   * Children's Specialties
+   * Procedures/Conditions
+   * location
 * [Blood Lead Testing Public](https://data.ohio.gov/wps/portal/gov/data/view/blood-lead-testing-public-_2016-present_)
-  * 
+   * year
+   * age group
+   * blood-lead micrograms/deciliter
+* [Cancer Data and Statistics](https://www.cdc.gov/cancer/data/index.html)
+   * location (state)
+   * date (year)
+   * Rate of New Cancers
+   * Rate of Cancer Deaths
+   * Cancer Site
 * [eCigarette Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/ecigarette-use-with-referral-info)
-  * 
+   * age
+   * sex
+   * county
+   * ethnicity
 * [Hospital Registration Information](https://data.ohio.gov/wps/portal/gov/data/view/hospital-registration-information)
-  * 
+   * report year
+   * hospital dba name
+   * hospital number
+   * address
+   * city
+   * state
+   * zip code
+   * county
+   * medicare name
+   * corporate phone
+   * national provider identifier
+   * medicare provider number
+   * business entity type
+   * type_of_organization_responsible_for_overall_operational_polic
+   * hospital_part_of_a_multi_hospital_system
+   * system name
+   * medicare classification
+   * category_best_describing_hospital_services
+   * other_service_category
+   * joint_commission_accreditation
+   * hfap_accreditation
+   * medicare_certified
+   * dnv_accreditation
+   * date_of_last_accreditation_survey
+   * date_of_last_certification_survey
+   * distinct_part_psych_unit
+   * distinct_part_rehab_unit
+   * transplant_center
+   * maternity_unit
+   * medical_and_surgical_service_type
+   * surgical_cases_inpatient
+   * surgical_cases_outpatient
+   * number_surgical_operating_rooms_inpatient
+   * number_surgical_operating_rooms_outpatient
+   * number_surgical_services_dual_purpose_operating_rooms
+   * total_operating_rooms_onsite
+   * total_operating_rooms_offsite
+   * emergency_services_type
+   * emergency_services_treated_and_admitted
+   * emergency_services_treated_and_released
+   * trauma_level_adult
+   * trauma_level_pediatric
+   * cardiac_service_type
+   * adult_cardiac_catheterizations
+   * pediatric_cardiac_catheterizations
+   * adult_open_heart_procedures
+   * pediatric_cardiovascular_procedures
+   * obstetric_level
+   * newborn_level
+   * beds_category
+   * number_of_admissions_for_beds_category
+   * patient_days
+   * beds_in_use
+   * registered_beds
+   * occupancy_rate
+   * average_length_of_stay
+   * discharged_to_home_without_referral_to_home_care_or_hospice
+   * discharged_to_home_with_referral_to_home_care
+   * discharged_to_home_with_referral_to_hospice
+   * discharged_to_inpatient_service_of_a_hospice_care_program
+   * tranfers_to_other_hospitals
+   * transfers_to_a_nursing_home
+   * expired
+   * total_discharges
+   * registration_status
+   * query_run_date
 * [Infant Mortality Scorecard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-infant-mortality-scorecard)
-  * 
+   * county
+   * ethnicity
+   * age category
+   * birth outcomes
+	  * preterm birth
+	  * extreme preterm
+	  * low birth weight
+	  * extreme low birth weight
+   * maternal characteristics
+	  * smoker
+	  * prenatal care received
+	  * adequacy of prenatal care
+	  * obese weight pre-pregnancy
+	  * breastfed at discharge
+	  * appropriate pregnancy weight
+	  * interpregnancy interval under 18 months
 * [Mortality](https://data.ohio.gov/wps/portal/gov/data/view/mortality)
-  * county
-  * number of deaths
+   * county
+   * year
+   * death count
 * [National DPP Locator Map](https://data.ohio.gov/wps/portal/gov/data/view/national-diabetes-prevention-program-_national-dpp_-locator-map)
-  *
+   * name
+   * address
+   * city
+   * state
+   * zip
+   * contact
+   * website
+   * email
+   * phone
 * [ODH Respiratory Dashboard](https://data.ohio.gov/wps/portal/gov/data/view/ohio-department-of-health-respiratory-dashboard)
-  *
+   * age
+   * county
+   * district
+   * week
+   * hospitalized
+   * covid19
+   * flu
+   * rsv
 * [Ohio BRFSS Annual Report](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-annual-report)
-  * condition
-  * ethnicity
-  * sex
-  * age
-  * education level
-  * percent affected
-  * region
-  * 
+   * condition
+   * ethnicity
+   * sex
+   * age
+   * education level
+   * percent affected
+   * region
 * [Ohio BRFSS Data](https://data.ohio.gov/wps/portal/gov/data/view/ohio-brfss-data)
-  * condition
-  * ethnicity
-  * sex
-  * age
-  * education level
-  * percent affected
-  * region
-  * 
+   * condition
+   * ethnicity
+   * sex
+   * age
+   * education level
+   * percent affected
+   * region
 * [Ohio Pharmacy Access](https://data.ohio.gov/wps/portal/gov/data/view/ohio-pharmacy-assessment-)
-  *
+   * name
+   * location
+   * open_date
+   * closed_date
+   * pharmacy_type
 * [Population Data for Calculating Rates](https://data.ohio.gov/wps/portal/gov/data/view/population-data-for-calculating-rates)
-  *
+   * year
+   * countyCD
+   * age
+   * raceCD
+   * sexCD
+   * hispanicCD
+   * count
+   * AgeCDMCH
+   * AgeCDNCHS
+   * AgeCDNCI
+   * AgeCDSTD
+   * AgeBirth
+   * PopulationID
+   * AgeCDODRS
+   * AgeCDEHARS
 * [Summary of Infectious Diseases in Ohio](https://data.ohio.gov/wps/portal/gov/data/view/summary-of-infectious-diseases-in-ohio)
-  *
+   * reportable condition
+   * county
+   * report start date
+   * report end date
 * [Tobacco Use with Referral Info](https://data.ohio.gov/wps/portal/gov/data/view/tobacco-use-with-referral-info)
-  * 
+   * age
+   * sex
+   * county
+   * tobacco_type
+
 
 ## References
 
