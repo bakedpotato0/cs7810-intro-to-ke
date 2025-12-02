@@ -271,9 +271,6 @@ If there is some EducationLevel, it is usually an influence on Income level.
 * `EducationLevel subClassOf Education some Action` <br />
 If there is some EducationLevel, it will inform certain KeyBehavior Actions.
 
-#### Remarks
-* Any remarks re: usage
-
 ### Environment Module
 **Source Pattern:** Reporting Event
 
@@ -289,9 +286,6 @@ Environmental factors such as water cleanliness and air quality have a direct im
 If an Environment exists, it must have some description of its PollutionType (including "clean"/"sterile").
 * `Environment subClassOf Environment Module some HealthOutcome` <br />
 If an Environment exists, it may influence the chance of certain HealthOutcomes.
-
-#### Remarks
-* Any remarks re: usage
 
 ### HealthcareAccess Module
 **Source Pattern:** Reporting Event
@@ -315,9 +309,6 @@ If there is HealthcareAccess, then there is some level of Healthcare service acc
 * `EndingFix subClassOf HealthcareAccess Module some HealthOutcome` <br />
 If there is an EndingFix, there is some (positive or negative) influence on the chance of a HealthOutcome.
 
-#### Remarks
-* Any remarks re: usage
-
 ### HealthOutcomes Module
 **Source Pattern:** Recurring Event
 
@@ -338,9 +329,6 @@ If there is a HealthOutcome, then there is a startingCondition with descriptor c
 * `HealthOutcome subClassOf LifeEvent some endingCondition` <br />
 If there is a HealthOutcome, then there is an endingCondition with descriptor conditionDescription.
 
-#### Remarks
-* Any remarks re: usage
-
 ### KeyBehaviors Module
 **Source Pattern:** Reporting Event
 
@@ -357,9 +345,6 @@ If an Action exists, it must have some description.
 * `Action subClassOf KeyBehaviors some HealthOutcome` <br />
 If an Action exists, it must have some influence on some HealthOutcome.
 
-#### Remarks
-* Any remarks re: usage
-
 ### Life Module
 **Source Pattern:** Reporting Event
 
@@ -373,9 +358,6 @@ A series of health-related events can end a person’s life, or prolong it.
 #### Axioms
 * `LifeSpan subClassOf Life some measureOfTime` <br />
 If a LifeSpan exists, its length of Time can be measured.
-
-#### Remarks
-* Any remarks re: usage
 
 ### LifeEvent Module
 **Source Pattern:** Recurring Event
@@ -393,9 +375,6 @@ LifeEvents lead to more LifeEvents, until the cycle reaches EventualDeath.
 * `EventualDeath subClassOf LifeEvent max 1 LifeSpan` <br />
 If LifeEvents occur, there will be an EventualDeath which is the ending point of an IndividualHuman's LifeSpan.
 
-#### Remarks
-* Any remarks re: usage
-
 ### Location Module
 **Source Pattern:** Reporting Event
 
@@ -409,9 +388,6 @@ Where a person is located determines a number of social, environmental, and econ
 #### Axioms
 * `Location subClassOf Location Module some HealthcareAccess` <br />
 If some Location exists, it has some influence on HealthcareAccess services, including proximity to Hospitals, Pharmacies, and other Healthcare services.
-
-#### Remarks
-* Any remarks re: usage
 
 ### Person Module
 **Source Pattern:** Agent
@@ -445,9 +421,6 @@ If an IndividualHuman exists, that IndividualHuman performs some Action.
 * `IndividualHuman subClassOf Person some HealthOutcome` <br />
 If an IndividualHuman exists, that IndividualHuman has some HealthOutcomes during their LifeSpan.
 
-#### Remarks
-* Any remarks re: usage
-
 ### Population Module
 **Source Pattern:** Quantity
 
@@ -466,9 +439,6 @@ If a Population exists, it must have some countable number of members.
 * `PublicWelfare subClassOf Population some Condition` <br />
 If a Population exists, it must have some description of its PublicWelfare.
 
-#### Remarks
-* Any remarks re: usage
-
 ### RacialAttribute Module
 **Source Pattern:** Reporting Event
 
@@ -484,9 +454,6 @@ African-Americans tend to have higher rates of diabetes and higher blood pressur
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding medical Conditons that are more likely.
 * `GeneticPredisposition subClassOf RacialAttribute some HealthOutcome` <br />
 If a RacialAttribute includes a given GeneticPredispostion, there are corresponding HealthOutcomes that could arise from the predisposed Conditions.
-
-#### Remarks
-* Any remarks re: usage
 
 ### Wealth Module
 **Source Pattern:** Reporting Event
@@ -505,9 +472,6 @@ If Currency is a type of Income, it has some quantifiable monetary Value.
 If Wealth exists, some level of HealthcareAccess can be afforded.
 * `Income subClassOf WealthModule some EducationLevel.` <br />
 If a Person has some Income, it enables that Person to obtain some EducationLevel.
-
-#### Remarks
-* Any remarks re: usage
 
 ## The Overall Knowledge Graph
 ### Namespaces
