@@ -247,7 +247,7 @@ More datasets:
 
 ---
 
-![schema-diagram](schema-diagrams/overallSchema(1).png)
+![schema-diagram w:1000 h:630](schema-diagrams/overallSchema(1).png)
 
 ---
 
