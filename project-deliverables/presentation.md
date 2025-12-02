@@ -272,9 +272,9 @@ More datasets:
 
 # Retrospective — Comments
 **Chris Nodel**  
-- Contributions:
-- What went well:
-- What could be improved:
+- Contributions: contributor to, use case key notions, axioms, schema diagram, modules; generally in charge of double checking and oversight 
+- What went well: the workflow was generally rather smooth and communication was well coordinated
+- What could be improved: the data aquisition proved the most difficult part of the process due to inaccessability. 
 ---
 
 # Retrospective — Comments
